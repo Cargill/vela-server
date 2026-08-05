@@ -4,7 +4,7 @@ name: publish
 # trigger on push events with branch main
 on:
   push:
-    branches: [main]
+    branches: [main, release/*]
 
 permissions:
   contents: read
@@ -13,7 +13,7 @@ permissions:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    if: github.repository == 'Cargill/vela-server'
+    if: github.ref == 'refs/heads/main' && github.repository == 'Cargill/vela-server'
 
     permissions:
       contents: read # for actions/checkout to fetch code
@@ -68,7 +68,7 @@ jobs:
 
   publish_alpine:
     runs-on: ubuntu-latest
-    if: github.repository == 'Cargill/vela-server'
+    if: github.ref == 'refs/heads/main' && github.repository == 'Cargill/vela-server'
 
     permissions:
       contents: read # for actions/checkout to fetch code
