@@ -5,6 +5,7 @@ name: test
 on:
   pull_request:
   push:
+    branches: [main, release/*]
 
 permissions:
   contents: read
@@ -13,10 +14,6 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
-
-    # for codecov report upload
-    permissions:
-      id-token: write
 
     steps:
       - name: clone
@@ -39,8 +36,3 @@ jobs:
           go install github.com/santhosh-tekuri/jsonschema/cmd/jv@v0.7.0
           make test-jsonschema
 
-      - name: coverage
-        uses: codecov/codecov-action@fb8b3582c8e4def4969c97caa2f19720cb33a72f # v6.0.2
-        with:
-          use_oidc: true
-          files: coverage.out

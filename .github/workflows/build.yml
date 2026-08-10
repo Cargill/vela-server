@@ -5,6 +5,7 @@ name: build
 on:
   pull_request:
   push:
+    branches: [main, release/*]
 
 permissions:
   contents: read
