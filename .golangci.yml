@@ -190,14 +190,14 @@ formatters:
   settings:
     # https://github.com/daixiang0/gci
     # ensure import order is consistent
-    # gci write --custom-order -s standard -s default -s blank -s dot -s "prefix(github.com/go-vela)" .
+    # gci write --custom-order -s standard -s default -s blank -s dot -s "prefix(github.com/Cargill)" .
     gci:
       sections:
         - standard
         - default
         - blank
         - dot
-        - prefix(github.com/go-vela)
+        - prefix(github.com/Cargill)
       custom-order: true
   exclusions:
     generated: lax

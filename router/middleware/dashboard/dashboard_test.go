@@ -47,7 +47,7 @@ func TestDashboard_Establish(t *testing.T) {
 
 	wantRepo := new(api.DashboardRepo)
 	wantRepo.SetID(1)
-	wantRepo.SetName("go-vela/server")
+	wantRepo.SetName("Cargill/vela-server")
 	wantRepo.SetBranches([]string{"main"})
 	wantRepo.SetEvents([]string{"push"})
 

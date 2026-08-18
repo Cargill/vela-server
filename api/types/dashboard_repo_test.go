@@ -117,7 +117,7 @@ func TestTypes_DashboardRepo_String(t *testing.T) {
 func testDashboardRepo() *DashboardRepo {
 	d := new(DashboardRepo)
 
-	d.SetName("go-vela/server")
+	d.SetName("Cargill/vela-server")
 	d.SetID(1)
 	d.SetBranches([]string{"main"})
 	d.SetEvents([]string{"push", "tag"})
