@@ -11,11 +11,11 @@ import (
 	"github.com/sirupsen/logrus"
 	"gorm.io/gorm"
 
-	"github.com/go-vela/server/database"
-	"github.com/go-vela/server/router/middleware/build"
-	"github.com/go-vela/server/router/middleware/repo"
-	"github.com/go-vela/server/router/middleware/service"
-	"github.com/go-vela/server/util"
+	"github.com/Cargill/vela-server/database"
+	"github.com/Cargill/vela-server/router/middleware/build"
+	"github.com/Cargill/vela-server/router/middleware/repo"
+	"github.com/Cargill/vela-server/router/middleware/service"
+	"github.com/Cargill/vela-server/util"
 )
 
 // swagger:operation GET /api/v1/repos/{org}/{repo}/builds/{build}/services/{service}/logs services GetServiceLog

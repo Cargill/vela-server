@@ -7,7 +7,7 @@ import (
 
 	"go.yaml.in/yaml/v3"
 
-	"github.com/go-vela/server/compiler/types/raw"
+	"github.com/Cargill/vela-server/compiler/types/raw"
 )
 
 // convertPlatformVars takes the platform injected variables

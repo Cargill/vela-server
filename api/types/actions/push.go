@@ -2,7 +2,7 @@
 
 package actions
 
-import "github.com/go-vela/server/constants"
+import "github.com/Cargill/vela-server/constants"
 
 // Push is the API representation of the various actions associated
 // with the push event webhook from the SCM.

@@ -10,7 +10,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"go.yaml.in/yaml/v3"
 
-	"github.com/go-vela/server/compiler/types/pipeline"
+	"github.com/Cargill/vela-server/compiler/types/pipeline"
 )
 
 func TestYaml_Ruleset_ToPipeline(t *testing.T) {

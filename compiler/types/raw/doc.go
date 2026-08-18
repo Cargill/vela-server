@@ -4,5 +4,5 @@
 //
 // Usage:
 //
-//	import "github.com/go-vela/server/compiler/types/raw"
+//	import "github.com/Cargill/vela-server/compiler/types/raw"
 package raw

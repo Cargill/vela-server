@@ -11,10 +11,10 @@ import (
 	"github.com/sirupsen/logrus"
 	"gorm.io/gorm"
 
-	"github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/database"
-	"github.com/go-vela/server/router/middleware/user"
-	"github.com/go-vela/server/util"
+	"github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/database"
+	"github.com/Cargill/vela-server/router/middleware/user"
+	"github.com/Cargill/vela-server/util"
 )
 
 // swagger:operation GET /api/v1/user/dashboards dashboards ListUserDashboards

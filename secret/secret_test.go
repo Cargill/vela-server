@@ -5,7 +5,7 @@ package secret
 import (
 	"testing"
 
-	"github.com/go-vela/server/database"
+	"github.com/Cargill/vela-server/database"
 )
 
 func TestSecret_New(t *testing.T) {

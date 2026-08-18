@@ -9,8 +9,8 @@ import (
 	"github.com/google/go-cmp/cmp"
 	goyaml "go.yaml.in/yaml/v3"
 
-	"github.com/go-vela/server/compiler/types/raw"
-	"github.com/go-vela/server/compiler/types/yaml"
+	"github.com/Cargill/vela-server/compiler/types/raw"
+	"github.com/Cargill/vela-server/compiler/types/yaml"
 )
 
 func TestNative_Render(t *testing.T) {

@@ -9,9 +9,9 @@ import (
 	"github.com/google/uuid"
 	"github.com/lestrrat-go/jwx/v3/jwk"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/api/types/actions"
-	"github.com/go-vela/server/compiler/types/raw"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/api/types/actions"
+	"github.com/Cargill/vela-server/compiler/types/raw"
 )
 
 // API TEST RESOURCES

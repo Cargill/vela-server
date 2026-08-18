@@ -11,13 +11,13 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/api"
-	"github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/router/middleware/user"
-	"github.com/go-vela/server/scm"
-	"github.com/go-vela/server/secret"
-	"github.com/go-vela/server/util"
+	"github.com/Cargill/vela-server/api"
+	"github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/router/middleware/user"
+	"github.com/Cargill/vela-server/scm"
+	"github.com/Cargill/vela-server/secret"
+	"github.com/Cargill/vela-server/util"
 )
 
 // swagger:operation GET /api/v1/secrets/{engine}/{type}/{org}/{name} secrets ListSecrets

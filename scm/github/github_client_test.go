@@ -11,8 +11,8 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/google/go-github/v84/github"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/constants"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/constants"
 )
 
 func TestClient_installationCanReadRepo(t *testing.T) {

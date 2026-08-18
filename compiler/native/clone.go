@@ -3,8 +3,8 @@
 package native
 
 import (
-	"github.com/go-vela/server/compiler/types/yaml"
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/compiler/types/yaml"
+	"github.com/Cargill/vela-server/constants"
 )
 
 // CloneStage injects the clone stage process into a yaml configuration.

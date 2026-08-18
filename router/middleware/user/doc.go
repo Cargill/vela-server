@@ -6,5 +6,5 @@
 //
 // Usage:
 //
-//	import "github.com/go-vela/server/router/middleware/user"
+//	import "github.com/Cargill/vela-server/router/middleware/user"
 package user

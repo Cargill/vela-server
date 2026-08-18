@@ -8,7 +8,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	api "github.com/go-vela/server/api/types"
+	api "github.com/Cargill/vela-server/api/types"
 )
 
 // GetOrgName gets org name from Github.

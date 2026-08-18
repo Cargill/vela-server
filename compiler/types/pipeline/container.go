@@ -15,7 +15,7 @@ import (
 
 	"github.com/drone/envsubst"
 
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/constants"
 )
 
 type (

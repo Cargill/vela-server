@@ -5,7 +5,7 @@ package native
 import (
 	"fmt"
 
-	"github.com/go-vela/server/database"
+	"github.com/Cargill/vela-server/database"
 )
 
 // ClientOpt represents a configuration option to initialize the secret client for Native.

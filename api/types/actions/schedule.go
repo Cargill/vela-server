@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 package actions
 
-import "github.com/go-vela/server/constants"
+import "github.com/Cargill/vela-server/constants"
 
 // Schedule is the API representation of the various actions associated
 // with the schedule event.

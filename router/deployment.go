@@ -5,10 +5,10 @@ package router
 import (
 	"github.com/gin-gonic/gin"
 
-	"github.com/go-vela/server/api/deployment"
-	"github.com/go-vela/server/router/middleware/org"
-	"github.com/go-vela/server/router/middleware/perm"
-	"github.com/go-vela/server/router/middleware/repo"
+	"github.com/Cargill/vela-server/api/deployment"
+	"github.com/Cargill/vela-server/router/middleware/org"
+	"github.com/Cargill/vela-server/router/middleware/perm"
+	"github.com/Cargill/vela-server/router/middleware/repo"
 )
 
 // DeploymentHandlers is a function that extends the provided base router group

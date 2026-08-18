@@ -9,7 +9,7 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/constants"
 )
 
 // EvictInstallTokens evicts the installation tokens from Redis.

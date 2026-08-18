@@ -5,5 +5,5 @@
 //
 // Usage:
 //
-//	import "github.com/go-vela/server/internal/image"
+//	import "github.com/Cargill/vela-server/internal/image"
 package image

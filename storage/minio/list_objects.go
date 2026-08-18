@@ -8,7 +8,7 @@ import (
 
 	"github.com/minio/minio-go/v7"
 
-	api "github.com/go-vela/server/api/types"
+	api "github.com/Cargill/vela-server/api/types"
 )
 
 // ListBuildObjectNames lists the names of objects in a bucket for a specific build.

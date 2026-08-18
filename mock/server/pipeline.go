@@ -11,8 +11,8 @@ import (
 	"github.com/gin-gonic/gin"
 	yml "go.yaml.in/yaml/v3"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/compiler/types/yaml"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/compiler/types/yaml"
 )
 
 const (

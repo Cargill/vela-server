@@ -8,9 +8,9 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/urfave/cli/v3"
 
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/database"
-	"github.com/go-vela/server/secret"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/database"
+	"github.com/Cargill/vela-server/secret"
 )
 
 // helper function to setup the secrets engines from the CLI arguments.
@@ -27,7 +27,7 @@ func setupSecrets(ctx context.Context, c *cli.Command, d database.Interface) (ma
 
 	// setup the native secret service
 	//
-	// https://pkg.go.dev/github.com/go-vela/server/secret?tab=doc#New
+	// https://pkg.go.dev/github.com/Cargill/vela-server/secret?tab=doc#New
 	native, err := secret.New(ctx, _native)
 	if err != nil {
 		return nil, err
@@ -51,7 +51,7 @@ func setupSecrets(ctx context.Context, c *cli.Command, d database.Interface) (ma
 
 		// setup the vault secret service
 		//
-		// https://pkg.go.dev/github.com/go-vela/server/secret?tab=doc#New
+		// https://pkg.go.dev/github.com/Cargill/vela-server/secret?tab=doc#New
 		vault, err := secret.New(ctx, _vault)
 		if err != nil {
 			return nil, err

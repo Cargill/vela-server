@@ -7,12 +7,12 @@ import (
 	"io"
 	"os"
 
-	"github.com/go-vela/server/compiler/template/native"
-	"github.com/go-vela/server/compiler/template/starlark"
-	typesRaw "github.com/go-vela/server/compiler/types/raw"
-	"github.com/go-vela/server/compiler/types/yaml"
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/internal"
+	"github.com/Cargill/vela-server/compiler/template/native"
+	"github.com/Cargill/vela-server/compiler/template/starlark"
+	typesRaw "github.com/Cargill/vela-server/compiler/types/raw"
+	"github.com/Cargill/vela-server/compiler/types/yaml"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/internal"
 )
 
 // ParseRaw converts an object to a string.

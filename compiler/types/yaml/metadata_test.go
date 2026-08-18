@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/go-vela/server/compiler/types/pipeline"
+	"github.com/Cargill/vela-server/compiler/types/pipeline"
 )
 
 func TestYaml_Metadata_ToPipeline(t *testing.T) {

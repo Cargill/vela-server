@@ -3,8 +3,8 @@
 package yaml
 
 import (
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/compiler/types/raw"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/compiler/types/raw"
 )
 
 // Build is the yaml representation of a build for a pipeline.

@@ -9,7 +9,7 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/constants"
 )
 
 func TestTypes_Repo_Environment(t *testing.T) {

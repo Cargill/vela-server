@@ -12,10 +12,10 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/urfave/cli/v3"
 
-	"github.com/go-vela/server/api/types/settings"
-	"github.com/go-vela/server/compiler"
-	"github.com/go-vela/server/compiler/native"
-	sMiddleware "github.com/go-vela/server/router/middleware/settings"
+	"github.com/Cargill/vela-server/api/types/settings"
+	"github.com/Cargill/vela-server/compiler"
+	"github.com/Cargill/vela-server/compiler/native"
+	sMiddleware "github.com/Cargill/vela-server/router/middleware/settings"
 )
 
 func TestMiddleware_CompilerNative(t *testing.T) {

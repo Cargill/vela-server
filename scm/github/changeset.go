@@ -9,7 +9,7 @@ import (
 	"github.com/google/go-github/v84/github"
 	"github.com/sirupsen/logrus"
 
-	api "github.com/go-vela/server/api/types"
+	api "github.com/Cargill/vela-server/api/types"
 )
 
 // Changeset captures the list of files changed for a commit.

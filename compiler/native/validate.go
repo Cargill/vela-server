@@ -9,10 +9,10 @@ import (
 
 	"github.com/hashicorp/go-multierror"
 
-	"github.com/go-vela/server/compiler/types/pipeline"
-	"github.com/go-vela/server/compiler/types/yaml"
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/internal/image"
+	"github.com/Cargill/vela-server/compiler/types/pipeline"
+	"github.com/Cargill/vela-server/compiler/types/yaml"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/internal/image"
 )
 
 // ValidateYAML verifies the yaml configuration is valid.

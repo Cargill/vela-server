@@ -6,7 +6,7 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/constants"
 )
 
 // ListStepImageCount gets a list of all step images and the count of their occurrence from the database.

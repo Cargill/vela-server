@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/go-vela/server/compiler/types/raw"
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/compiler/types/raw"
+	"github.com/Cargill/vela-server/constants"
 )
 
 // Build is the API types representation of a build for a pipeline.

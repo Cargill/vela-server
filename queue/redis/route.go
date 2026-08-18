@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/go-vela/server/compiler/types/pipeline"
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/compiler/types/pipeline"
+	"github.com/Cargill/vela-server/constants"
 )
 
 // Route decides which route a build gets placed within the queue.

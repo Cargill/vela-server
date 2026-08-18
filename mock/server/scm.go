@@ -9,7 +9,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	api "github.com/go-vela/server/api/types"
+	api "github.com/Cargill/vela-server/api/types"
 )
 
 // syncRepo has a param :repo returns mock JSON for a http PATCH.

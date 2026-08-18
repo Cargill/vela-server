@@ -10,7 +10,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/go-vela/server/internal/token"
+	"github.com/Cargill/vela-server/internal/token"
 )
 
 func TestMiddleware_TokenManager(t *testing.T) {

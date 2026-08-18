@@ -6,9 +6,9 @@ import (
 	"database/sql"
 	"errors"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/compiler/types/raw"
-	"github.com/go-vela/server/util"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/compiler/types/raw"
+	"github.com/Cargill/vela-server/util"
 )
 
 var (

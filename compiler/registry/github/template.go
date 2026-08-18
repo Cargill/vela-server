@@ -9,8 +9,8 @@ import (
 
 	"github.com/google/go-github/v84/github"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/compiler/registry"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/compiler/registry"
 )
 
 // Template captures the templated pipeline configuration from the GitHub repo.

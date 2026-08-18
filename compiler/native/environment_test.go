@@ -10,10 +10,10 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/compiler/types/raw"
-	"github.com/go-vela/server/compiler/types/yaml"
-	"github.com/go-vela/server/internal"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/compiler/types/raw"
+	"github.com/Cargill/vela-server/compiler/types/yaml"
+	"github.com/Cargill/vela-server/internal"
 )
 
 func TestNative_EnvironmentStages(t *testing.T) {

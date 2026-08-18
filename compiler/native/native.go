@@ -10,16 +10,16 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/urfave/cli/v3"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/api/types/settings"
-	"github.com/go-vela/server/cache"
-	"github.com/go-vela/server/compiler"
-	"github.com/go-vela/server/compiler/registry"
-	"github.com/go-vela/server/compiler/registry/github"
-	"github.com/go-vela/server/database"
-	"github.com/go-vela/server/internal"
-	"github.com/go-vela/server/internal/image"
-	"github.com/go-vela/server/scm"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/api/types/settings"
+	"github.com/Cargill/vela-server/cache"
+	"github.com/Cargill/vela-server/compiler"
+	"github.com/Cargill/vela-server/compiler/registry"
+	"github.com/Cargill/vela-server/compiler/registry/github"
+	"github.com/Cargill/vela-server/database"
+	"github.com/Cargill/vela-server/internal"
+	"github.com/Cargill/vela-server/internal/image"
+	"github.com/Cargill/vela-server/scm"
 )
 
 type ModificationConfig struct {

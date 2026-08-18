@@ -5,8 +5,8 @@ package redis
 import (
 	"testing"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/cache/models"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/cache/models"
 )
 
 func TestRedis_EvictInstall(t *testing.T) {

@@ -4,5 +4,5 @@
 //
 // Usage:
 //
-//	import "github.com/go-vela/server/api/secret"
+//	import "github.com/Cargill/vela-server/api/secret"
 package secret

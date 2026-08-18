@@ -5,7 +5,7 @@ package schedule
 import (
 	"context"
 
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/constants"
 )
 
 // CountActiveSchedules gets the count of all active schedules from the database.

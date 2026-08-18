@@ -13,8 +13,8 @@ import (
 	"go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
 	"golang.org/x/oauth2"
 
-	"github.com/go-vela/server/cache/models"
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/cache/models"
+	"github.com/Cargill/vela-server/constants"
 )
 
 // newOAuthTokenClient returns the GitHub OAuth client.

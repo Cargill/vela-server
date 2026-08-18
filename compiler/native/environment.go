@@ -8,11 +8,11 @@ import (
 	"os"
 	"strings"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/compiler/types/raw"
-	"github.com/go-vela/server/compiler/types/yaml"
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/internal"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/compiler/types/raw"
+	"github.com/Cargill/vela-server/compiler/types/yaml"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/internal"
 )
 
 // EnvironmentStages injects environment variables

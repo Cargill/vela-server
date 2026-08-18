@@ -7,8 +7,8 @@ import (
 	"reflect"
 	"testing"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/database"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/database"
 )
 
 func TestNative_Get(t *testing.T) {

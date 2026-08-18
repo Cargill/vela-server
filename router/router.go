@@ -32,17 +32,17 @@ package router
 import (
 	"github.com/gin-gonic/gin"
 
-	"github.com/go-vela/server/api"
-	"github.com/go-vela/server/api/auth"
-	apiBuild "github.com/go-vela/server/api/build"
-	apiRepo "github.com/go-vela/server/api/repo"
-	"github.com/go-vela/server/api/webhook"
-	"github.com/go-vela/server/router/middleware"
-	"github.com/go-vela/server/router/middleware/build"
-	"github.com/go-vela/server/router/middleware/claims"
-	"github.com/go-vela/server/router/middleware/org"
-	"github.com/go-vela/server/router/middleware/repo"
-	"github.com/go-vela/server/router/middleware/user"
+	"github.com/Cargill/vela-server/api"
+	"github.com/Cargill/vela-server/api/auth"
+	apiBuild "github.com/Cargill/vela-server/api/build"
+	apiRepo "github.com/Cargill/vela-server/api/repo"
+	"github.com/Cargill/vela-server/api/webhook"
+	"github.com/Cargill/vela-server/router/middleware"
+	"github.com/Cargill/vela-server/router/middleware/build"
+	"github.com/Cargill/vela-server/router/middleware/claims"
+	"github.com/Cargill/vela-server/router/middleware/org"
+	"github.com/Cargill/vela-server/router/middleware/repo"
+	"github.com/Cargill/vela-server/router/middleware/user"
 )
 
 const (

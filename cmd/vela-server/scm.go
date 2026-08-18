@@ -8,8 +8,8 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/urfave/cli/v3"
 
-	"github.com/go-vela/server/scm"
-	"github.com/go-vela/server/tracing"
+	"github.com/Cargill/vela-server/scm"
+	"github.com/Cargill/vela-server/tracing"
 )
 
 // helper function to setup the scm from the CLI arguments.
@@ -39,6 +39,6 @@ func setupSCM(ctx context.Context, c *cli.Command, tc *tracing.Client) (scm.Serv
 
 	// setup the scm
 	//
-	// https://pkg.go.dev/github.com/go-vela/server/scm?tab=doc#New
+	// https://pkg.go.dev/github.com/Cargill/vela-server/scm?tab=doc#New
 	return scm.New(ctx, _setup)
 }

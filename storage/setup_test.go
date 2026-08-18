@@ -5,7 +5,7 @@ package storage
 import (
 	"testing"
 
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/constants"
 )
 
 func TestSetup_Minio(t *testing.T) {

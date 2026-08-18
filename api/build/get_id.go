@@ -10,10 +10,10 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/database"
-	"github.com/go-vela/server/router/middleware/user"
-	"github.com/go-vela/server/scm"
-	"github.com/go-vela/server/util"
+	"github.com/Cargill/vela-server/database"
+	"github.com/Cargill/vela-server/router/middleware/user"
+	"github.com/Cargill/vela-server/scm"
+	"github.com/Cargill/vela-server/util"
 )
 
 // swagger:operation GET /api/v1/search/builds/{id} builds GetBuildByID

@@ -9,7 +9,7 @@ import (
 
 	"github.com/DATA-DOG/go-sqlmock"
 
-	"github.com/go-vela/server/api/types/settings"
+	"github.com/Cargill/vela-server/api/types/settings"
 )
 
 func TestSettings_Engine_CreateSettings(t *testing.T) {

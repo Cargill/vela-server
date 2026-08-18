@@ -9,8 +9,8 @@ import (
 
 	"github.com/urfave/cli/v3"
 
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/util"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/util"
 )
 
 // Flags represents all supported command line

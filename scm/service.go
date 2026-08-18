@@ -6,12 +6,12 @@ import (
 	"context"
 	"net/http"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/api/types/settings"
-	"github.com/go-vela/server/cache"
-	"github.com/go-vela/server/cache/models"
-	"github.com/go-vela/server/database"
-	"github.com/go-vela/server/internal"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/api/types/settings"
+	"github.com/Cargill/vela-server/cache"
+	"github.com/Cargill/vela-server/cache/models"
+	"github.com/Cargill/vela-server/database"
+	"github.com/Cargill/vela-server/internal"
 )
 
 // Service represents the interface for Vela integrating

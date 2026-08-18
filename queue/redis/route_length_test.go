@@ -7,7 +7,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/go-vela/server/queue/models"
+	"github.com/Cargill/vela-server/queue/models"
 )
 
 func TestRedis_RouteLength(t *testing.T) {

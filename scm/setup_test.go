@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/constants"
 )
 
 func TestSCM_Setup_Github(t *testing.T) {

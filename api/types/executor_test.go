@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/go-vela/server/compiler/types/pipeline"
+	"github.com/Cargill/vela-server/compiler/types/pipeline"
 )
 
 func TestTypes_Executor_Getters(t *testing.T) {

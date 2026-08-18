@@ -8,7 +8,7 @@ import (
 
 	"github.com/goware/urlx"
 
-	"github.com/go-vela/server/compiler/registry"
+	"github.com/Cargill/vela-server/compiler/registry"
 )
 
 // Parse creates the registry source object from

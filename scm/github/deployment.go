@@ -9,8 +9,8 @@ import (
 	"github.com/google/go-github/v84/github"
 	"github.com/sirupsen/logrus"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/compiler/types/raw"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/compiler/types/raw"
 )
 
 // GetDeployment gets a deployment from the GitHub repo.

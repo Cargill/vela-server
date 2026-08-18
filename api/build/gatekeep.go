@@ -8,10 +8,10 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/database"
-	"github.com/go-vela/server/scm"
+	"github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/database"
+	"github.com/Cargill/vela-server/scm"
 )
 
 // GatekeepBuild is a helper function that will set the status of a build to 'pending approval' and

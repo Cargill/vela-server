@@ -7,8 +7,8 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/constants"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/constants"
 )
 
 // CountServicesForBuild gets the count of services by build ID from the database.

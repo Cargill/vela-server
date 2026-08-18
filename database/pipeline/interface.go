@@ -5,7 +5,7 @@ package pipeline
 import (
 	"context"
 
-	api "github.com/go-vela/server/api/types"
+	api "github.com/Cargill/vela-server/api/types"
 )
 
 // PipelineInterface represents the Vela interface for pipeline

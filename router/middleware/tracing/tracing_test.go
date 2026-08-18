@@ -11,7 +11,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/tracing"
+	"github.com/Cargill/vela-server/tracing"
 )
 
 func TestTracing_Retrieve(t *testing.T) {

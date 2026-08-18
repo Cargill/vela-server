@@ -13,10 +13,10 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/urfave/cli/v3"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/compiler/types/raw"
-	"github.com/go-vela/server/compiler/types/yaml"
-	"github.com/go-vela/server/constants"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/compiler/types/raw"
+	"github.com/Cargill/vela-server/compiler/types/yaml"
+	"github.com/Cargill/vela-server/constants"
 )
 
 func TestNative_Parse_Metadata_Bytes(t *testing.T) {

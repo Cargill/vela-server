@@ -5,5 +5,5 @@
 //
 // Usage:
 //
-//	import "github.com/go-vela/server/compiler/registry"
+//	import "github.com/Cargill/vela-server/compiler/registry"
 package registry

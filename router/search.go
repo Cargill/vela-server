@@ -5,7 +5,7 @@ package router
 import (
 	"github.com/gin-gonic/gin"
 
-	"github.com/go-vela/server/api/build"
+	"github.com/Cargill/vela-server/api/build"
 )
 
 // SearchHandlers is a function that extends the provided base router group

@@ -6,8 +6,8 @@ import (
 	"github.com/gin-gonic/gin"
 	"go.opentelemetry.io/contrib/instrumentation/github.com/gin-gonic/gin/otelgin"
 
-	tracingMiddleware "github.com/go-vela/server/router/middleware/tracing"
-	"github.com/go-vela/server/tracing"
+	tracingMiddleware "github.com/Cargill/vela-server/router/middleware/tracing"
+	"github.com/Cargill/vela-server/tracing"
 )
 
 // TracingClient is a middleware function that attaches the tracing config

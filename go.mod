@@ -1,4 +1,4 @@
-module github.com/go-vela/server
+module github.com/Cargill/vela-server
 
 go 1.26.3
 

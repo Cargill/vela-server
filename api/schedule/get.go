@@ -8,7 +8,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/router/middleware/schedule"
+	"github.com/Cargill/vela-server/router/middleware/schedule"
 )
 
 // swagger:operation GET /api/v1/schedules/{org}/{repo}/{schedule} schedules GetSchedule

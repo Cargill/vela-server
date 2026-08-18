@@ -8,7 +8,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/constants"
 )
 
 // New creates and returns a Vela service capable of
@@ -22,7 +22,7 @@ import (
 func New(ctx context.Context, s *Setup) (Service, error) {
 	// validate the setup being provided
 	//
-	// https://pkg.go.dev/github.com/go-vela/server/secret?tab=doc#Setup.Validate
+	// https://pkg.go.dev/github.com/Cargill/vela-server/secret?tab=doc#Setup.Validate
 	err := s.Validate()
 	if err != nil {
 		return nil, err
@@ -34,12 +34,12 @@ func New(ctx context.Context, s *Setup) (Service, error) {
 	case constants.DriverNative:
 		// handle the Native secret driver being provided
 		//
-		// https://pkg.go.dev/github.com/go-vela/server/secret?tab=doc#Setup.Native
+		// https://pkg.go.dev/github.com/Cargill/vela-server/secret?tab=doc#Setup.Native
 		return s.Native(ctx)
 	case constants.DriverVault:
 		// handle the Vault secret driver being provided
 		//
-		// https://pkg.go.dev/github.com/go-vela/server/secret?tab=doc#Setup.Vault
+		// https://pkg.go.dev/github.com/Cargill/vela-server/secret?tab=doc#Setup.Vault
 		return s.Vault(ctx)
 	default:
 		// handle an invalid secret driver being provided

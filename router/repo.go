@@ -5,12 +5,12 @@ package router
 import (
 	"github.com/gin-gonic/gin"
 
-	"github.com/go-vela/server/api/build"
-	"github.com/go-vela/server/api/repo"
-	"github.com/go-vela/server/router/middleware"
-	"github.com/go-vela/server/router/middleware/org"
-	"github.com/go-vela/server/router/middleware/perm"
-	rmiddleware "github.com/go-vela/server/router/middleware/repo"
+	"github.com/Cargill/vela-server/api/build"
+	"github.com/Cargill/vela-server/api/repo"
+	"github.com/Cargill/vela-server/router/middleware"
+	"github.com/Cargill/vela-server/router/middleware/org"
+	"github.com/Cargill/vela-server/router/middleware/perm"
+	rmiddleware "github.com/Cargill/vela-server/router/middleware/repo"
 )
 
 // RepoHandlers is a function that extends the provided base router group

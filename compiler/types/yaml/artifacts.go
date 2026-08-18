@@ -3,8 +3,8 @@
 package yaml
 
 import (
-	"github.com/go-vela/server/compiler/types/pipeline"
-	"github.com/go-vela/server/compiler/types/raw"
+	"github.com/Cargill/vela-server/compiler/types/pipeline"
+	"github.com/Cargill/vela-server/compiler/types/raw"
 )
 
 // Artifacts represents the structure for artifacts configuration.

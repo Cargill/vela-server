@@ -10,7 +10,7 @@ import (
 	"github.com/minio/minio-go/v7"
 	"github.com/sirupsen/logrus"
 
-	api "github.com/go-vela/server/api/types"
+	api "github.com/Cargill/vela-server/api/types"
 )
 
 // PresignedGetObject generates a presigned URL for downloading an object.

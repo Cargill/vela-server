@@ -13,14 +13,14 @@ import (
 
 	_ "github.com/joho/godotenv/autoload"
 
-	"github.com/go-vela/server/cache"
-	"github.com/go-vela/server/database"
-	"github.com/go-vela/server/queue"
-	"github.com/go-vela/server/scm"
-	"github.com/go-vela/server/secret"
-	"github.com/go-vela/server/storage"
-	"github.com/go-vela/server/tracing"
-	"github.com/go-vela/server/version"
+	"github.com/Cargill/vela-server/cache"
+	"github.com/Cargill/vela-server/database"
+	"github.com/Cargill/vela-server/queue"
+	"github.com/Cargill/vela-server/scm"
+	"github.com/Cargill/vela-server/secret"
+	"github.com/Cargill/vela-server/storage"
+	"github.com/Cargill/vela-server/tracing"
+	"github.com/Cargill/vela-server/version"
 )
 
 func main() {

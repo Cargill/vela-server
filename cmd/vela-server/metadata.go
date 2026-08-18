@@ -8,7 +8,7 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/urfave/cli/v3"
 
-	"github.com/go-vela/server/internal"
+	"github.com/Cargill/vela-server/internal"
 )
 
 // helper function to setup the metadata from the CLI arguments.

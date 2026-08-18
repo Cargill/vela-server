@@ -10,8 +10,8 @@ import (
 	"github.com/hashicorp/vault/api"
 	"github.com/sirupsen/logrus"
 
-	velaAPI "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/constants"
+	velaAPI "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/constants"
 )
 
 // List captures a list of secrets.

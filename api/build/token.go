@@ -11,13 +11,13 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/internal/token"
-	"github.com/go-vela/server/router/middleware/build"
-	"github.com/go-vela/server/router/middleware/claims"
-	"github.com/go-vela/server/router/middleware/repo"
-	"github.com/go-vela/server/util"
+	"github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/internal/token"
+	"github.com/Cargill/vela-server/router/middleware/build"
+	"github.com/Cargill/vela-server/router/middleware/claims"
+	"github.com/Cargill/vela-server/router/middleware/repo"
+	"github.com/Cargill/vela-server/util"
 )
 
 // swagger:operation GET /api/v1/repos/{org}/{repo}/builds/{build}/token builds GetBuildToken

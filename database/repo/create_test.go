@@ -9,7 +9,7 @@ import (
 	"github.com/DATA-DOG/go-sqlmock"
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/go-vela/server/database/testutils"
+	"github.com/Cargill/vela-server/database/testutils"
 )
 
 func TestRepo_Engine_CreateRepo(t *testing.T) {

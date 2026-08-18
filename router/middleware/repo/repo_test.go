@@ -12,10 +12,10 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/database"
-	"github.com/go-vela/server/database/testutils"
-	"github.com/go-vela/server/router/middleware/org"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/database"
+	"github.com/Cargill/vela-server/database/testutils"
+	"github.com/Cargill/vela-server/router/middleware/org"
 )
 
 func TestRepo_Retrieve(t *testing.T) {

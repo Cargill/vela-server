@@ -12,7 +12,7 @@ import (
 	"github.com/lestrrat-go/jwx/v3/jwk"
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/database"
+	"github.com/Cargill/vela-server/database"
 )
 
 // GenerateRSA creates an RSA key pair and sets it in the token manager and saves the JWK in the database.

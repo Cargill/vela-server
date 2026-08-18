@@ -5,7 +5,7 @@ package step
 import (
 	"context"
 
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/constants"
 )
 
 // CountSteps gets the count of all steps from the database.

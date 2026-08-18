@@ -5,7 +5,7 @@ package middleware
 import (
 	"github.com/gin-gonic/gin"
 
-	"github.com/go-vela/server/cache"
+	"github.com/Cargill/vela-server/cache"
 )
 
 // Cache is a middleware function that initializes the cache and

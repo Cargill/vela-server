@@ -5,5 +5,5 @@
 //
 // Usage:
 //
-//	import "github.com/go-vela/server/secret/vault"
+//	import "github.com/Cargill/vela-server/secret/vault"
 package vault

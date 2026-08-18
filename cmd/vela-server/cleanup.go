@@ -10,8 +10,8 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/database"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/database"
 )
 
 // helper function to clean pending approval builds from the database.

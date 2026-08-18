@@ -5,7 +5,7 @@ package repo
 import (
 	"context"
 
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/constants"
 )
 
 // CountRepos gets the count of all repos from the database.

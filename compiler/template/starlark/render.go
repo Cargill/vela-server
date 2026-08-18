@@ -11,9 +11,9 @@ import (
 	"go.starlark.net/starlarkstruct"
 	"go.starlark.net/syntax"
 
-	"github.com/go-vela/server/compiler/types/raw"
-	types "github.com/go-vela/server/compiler/types/yaml"
-	"github.com/go-vela/server/internal"
+	"github.com/Cargill/vela-server/compiler/types/raw"
+	types "github.com/Cargill/vela-server/compiler/types/yaml"
+	"github.com/Cargill/vela-server/internal"
 )
 
 var (

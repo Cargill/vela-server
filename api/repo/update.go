@@ -13,13 +13,13 @@ import (
 	"github.com/google/uuid"
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/database"
-	"github.com/go-vela/server/router/middleware/repo"
-	"github.com/go-vela/server/router/middleware/user"
-	"github.com/go-vela/server/scm"
-	"github.com/go-vela/server/util"
+	"github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/database"
+	"github.com/Cargill/vela-server/router/middleware/repo"
+	"github.com/Cargill/vela-server/router/middleware/user"
+	"github.com/Cargill/vela-server/scm"
+	"github.com/Cargill/vela-server/util"
 )
 
 // swagger:operation PUT /api/v1/repos/{org}/{repo} repos UpdateRepo

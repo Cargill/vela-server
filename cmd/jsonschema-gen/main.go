@@ -10,7 +10,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/schema"
+	"github.com/Cargill/vela-server/schema"
 )
 
 func main() {

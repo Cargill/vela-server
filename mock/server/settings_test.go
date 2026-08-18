@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/go-vela/server/api/types/settings"
+	"github.com/Cargill/vela-server/api/types/settings"
 )
 
 func TestSettings_GetResp(t *testing.T) {

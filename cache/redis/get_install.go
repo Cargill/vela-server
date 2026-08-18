@@ -10,9 +10,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/go-vela/server/cache/models"
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/util"
+	"github.com/Cargill/vela-server/cache/models"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/util"
 )
 
 func (c *Client) GetInstallToken(ctx context.Context, token string) (*models.InstallToken, error) {

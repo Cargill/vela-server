@@ -9,7 +9,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/constants"
 )
 
 // CleanupResult represents the result of a log cleanup operation.

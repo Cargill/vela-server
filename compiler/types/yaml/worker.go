@@ -2,7 +2,7 @@
 
 package yaml
 
-import "github.com/go-vela/server/compiler/types/pipeline"
+import "github.com/Cargill/vela-server/compiler/types/pipeline"
 
 // Worker is the yaml representation of a worker
 // from a worker block in a pipeline.

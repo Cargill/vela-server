@@ -9,10 +9,10 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/database"
-	"github.com/go-vela/server/router/middleware/hook"
-	"github.com/go-vela/server/router/middleware/repo"
-	"github.com/go-vela/server/util"
+	"github.com/Cargill/vela-server/database"
+	"github.com/Cargill/vela-server/router/middleware/hook"
+	"github.com/Cargill/vela-server/router/middleware/repo"
+	"github.com/Cargill/vela-server/util"
 )
 
 // swagger:operation DELETE /api/v1/hooks/{org}/{repo}/{hook} webhook DeleteHook

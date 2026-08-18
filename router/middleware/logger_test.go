@@ -17,13 +17,13 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/sirupsen/logrus/hooks/test"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/router/middleware/build"
-	"github.com/go-vela/server/router/middleware/repo"
-	"github.com/go-vela/server/router/middleware/service"
-	"github.com/go-vela/server/router/middleware/step"
-	"github.com/go-vela/server/router/middleware/user"
-	"github.com/go-vela/server/router/middleware/worker"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/router/middleware/build"
+	"github.com/Cargill/vela-server/router/middleware/repo"
+	"github.com/Cargill/vela-server/router/middleware/service"
+	"github.com/Cargill/vela-server/router/middleware/step"
+	"github.com/Cargill/vela-server/router/middleware/user"
+	"github.com/Cargill/vela-server/router/middleware/worker"
 )
 
 func TestMiddleware_Logger(t *testing.T) {

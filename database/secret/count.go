@@ -5,7 +5,7 @@ package secret
 import (
 	"context"
 
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/constants"
 )
 
 // CountSecrets gets the count of all secrets from the database.

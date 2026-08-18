@@ -11,7 +11,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/go-vela/server/compiler/registry"
+	"github.com/Cargill/vela-server/compiler/registry"
 )
 
 func TestGithub_Parse(t *testing.T) {

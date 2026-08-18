@@ -8,9 +8,9 @@ import (
 
 	"github.com/DATA-DOG/go-sqlmock"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/database/testutils"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/database/testutils"
 )
 
 func TestRepo_Engine_PartialUpdateRepo(t *testing.T) {

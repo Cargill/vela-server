@@ -10,10 +10,10 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/database"
-	"github.com/go-vela/server/secret/native"
-	"github.com/go-vela/server/secret/vault"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/database"
+	"github.com/Cargill/vela-server/secret/native"
+	"github.com/Cargill/vela-server/secret/vault"
 )
 
 // Setup represents the configuration necessary for
@@ -51,7 +51,7 @@ func (s *Setup) Native(_ context.Context) (Service, error) {
 
 	// create new native secret service
 	//
-	// https://pkg.go.dev/github.com/go-vela/server/secret/native?tab=doc#New
+	// https://pkg.go.dev/github.com/Cargill/vela-server/secret/native?tab=doc#New
 	return native.New(
 		native.WithDatabase(s.Database),
 	)
@@ -64,7 +64,7 @@ func (s *Setup) Vault(ctx context.Context) (Service, error) {
 
 	// create new Vault secret service
 	//
-	// https://pkg.go.dev/github.com/go-vela/server/secret/vault?tab=doc#NewWithContext
+	// https://pkg.go.dev/github.com/Cargill/vela-server/secret/vault?tab=doc#NewWithContext
 	return vault.NewWithContext(
 		ctx,
 		vault.WithAddress(s.Address),

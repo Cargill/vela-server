@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-vela/server/compiler/types/pipeline"
+	"github.com/Cargill/vela-server/compiler/types/pipeline"
 )
 
 func TestTypes_Step_Duration(t *testing.T) {

@@ -5,8 +5,8 @@ package native
 import (
 	"fmt"
 
-	"github.com/go-vela/server/compiler/types/pipeline"
-	"github.com/go-vela/server/compiler/types/yaml"
+	"github.com/Cargill/vela-server/compiler/types/pipeline"
+	"github.com/Cargill/vela-server/compiler/types/yaml"
 )
 
 // TransformStages converts a yaml configuration with stages into an executable pipeline.

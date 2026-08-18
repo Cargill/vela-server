@@ -5,5 +5,5 @@
 //
 // Usage:
 //
-//	import "github.com/go-vela/server/scm/github"
+//	import "github.com/Cargill/vela-server/scm/github"
 package github

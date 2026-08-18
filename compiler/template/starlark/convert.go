@@ -7,7 +7,7 @@ import (
 
 	"go.starlark.net/starlark"
 
-	"github.com/go-vela/server/compiler/types/raw"
+	"github.com/Cargill/vela-server/compiler/types/raw"
 )
 
 // convertTemplateVars takes template variables and converts

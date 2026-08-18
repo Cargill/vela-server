@@ -13,7 +13,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/hashicorp/vault/api"
 
-	velaAPI "github.com/go-vela/server/api/types"
+	velaAPI "github.com/Cargill/vela-server/api/types"
 )
 
 func TestVault_New(t *testing.T) {

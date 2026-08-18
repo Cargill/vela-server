@@ -7,8 +7,8 @@ import (
 
 	"github.com/lestrrat-go/jwx/v3/jwk"
 
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/database/types"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/database/types"
 )
 
 // ListJWKs gets a list of all configured JWKs from the database.

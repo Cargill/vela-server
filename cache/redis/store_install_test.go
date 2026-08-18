@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-vela/server/cache/models"
+	"github.com/Cargill/vela-server/cache/models"
 )
 
 func TestRedis_StoreInstall(t *testing.T) {

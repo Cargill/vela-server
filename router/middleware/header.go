@@ -8,8 +8,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/go-vela/server/internal"
-	"github.com/go-vela/server/version"
+	"github.com/Cargill/vela-server/internal"
+	"github.com/Cargill/vela-server/version"
 )
 
 // NoCache is a middleware function that appends headers

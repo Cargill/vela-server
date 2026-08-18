@@ -8,7 +8,7 @@ import (
 
 	"github.com/DATA-DOG/go-sqlmock"
 
-	"github.com/go-vela/server/database/testutils"
+	"github.com/Cargill/vela-server/database/testutils"
 )
 
 func TestUser_Engine_DeleteUser(t *testing.T) {

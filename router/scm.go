@@ -5,9 +5,9 @@ package router
 import (
 	"github.com/gin-gonic/gin"
 
-	"github.com/go-vela/server/api/scm"
-	"github.com/go-vela/server/router/middleware/org"
-	"github.com/go-vela/server/router/middleware/repo"
+	"github.com/Cargill/vela-server/api/scm"
+	"github.com/Cargill/vela-server/router/middleware/org"
+	"github.com/Cargill/vela-server/router/middleware/repo"
 )
 
 // ScmHandlers is a function that extends the provided base router group

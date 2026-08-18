@@ -9,9 +9,9 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/scm/github"
-	"github.com/go-vela/server/tracing"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/scm/github"
+	"github.com/Cargill/vela-server/tracing"
 )
 
 // Setup represents the configuration necessary for
@@ -63,7 +63,7 @@ func (s *Setup) Github(ctx context.Context) (Service, error) {
 
 	// create new Github scm service
 	//
-	// https://pkg.go.dev/github.com/go-vela/server/scm/github?tab=doc#New
+	// https://pkg.go.dev/github.com/Cargill/vela-server/scm/github?tab=doc#New
 	return github.New(
 		ctx,
 		github.WithAddress(s.Address),

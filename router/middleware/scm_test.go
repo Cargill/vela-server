@@ -10,8 +10,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/go-vela/server/scm"
-	"github.com/go-vela/server/scm/github"
+	"github.com/Cargill/vela-server/scm"
+	"github.com/Cargill/vela-server/scm/github"
 )
 
 func TestMiddleware_Scm(t *testing.T) {

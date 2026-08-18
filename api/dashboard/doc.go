@@ -4,5 +4,5 @@
 //
 // Usage:
 //
-//	import "github.com/go-vela/server/api/dashboard"
+//	import "github.com/Cargill/vela-server/api/dashboard"
 package dashboard

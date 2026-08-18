@@ -19,7 +19,7 @@ ifndef GITHUB_TAG
 endif
 
 # create a list of linker flags for building the golang application
-LD_FLAGS = -X github.com/go-vela/server/version.Commit=${GITHUB_SHA} -X github.com/go-vela/server/version.Date=${BUILD_DATE} -X github.com/go-vela/server/version.Tag=${GITHUB_TAG}
+LD_FLAGS = -X github.com/Cargill/vela-server/version.Commit=${GITHUB_SHA} -X github.com/Cargill/vela-server/version.Date=${BUILD_DATE} -X github.com/Cargill/vela-server/version.Tag=${GITHUB_TAG}
 
 # The `clean` target is intended to clean the workspace
 # and prepare the local changes for submission.
@@ -142,7 +142,7 @@ build:
 		go build -tags nomsgpack -a \
 		-ldflags '${LD_FLAGS}' \
 		-o release/vela-server \
-		github.com/go-vela/server/cmd/vela-server
+		github.com/Cargill/vela-server/cmd/vela-server
 
 # The `build-static` target is intended to compile
 # the Go source code into a statically linked binary.
@@ -156,7 +156,7 @@ build-static:
 		go build -tags nomsgpack -a \
 		-ldflags '-s -w -extldflags "-static" ${LD_FLAGS}' \
 		-o release/vela-server \
-		github.com/go-vela/server/cmd/vela-server
+		github.com/Cargill/vela-server/cmd/vela-server
 
 # The `build-static-ci` target is intended to compile
 # the Go source code into a statically linked binary
@@ -170,7 +170,7 @@ build-static-ci:
 	@go build -tags nomsgpack -a \
 		-ldflags '-s -w -extldflags "-static" ${LD_FLAGS}' \
 		-o release/vela-server \
-		github.com/go-vela/server/cmd/vela-server
+		github.com/Cargill/vela-server/cmd/vela-server
 
 # The `check` target is intended to output all
 # dependencies from the Go module that need updates.

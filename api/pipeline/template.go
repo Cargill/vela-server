@@ -10,17 +10,17 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/compiler"
-	"github.com/go-vela/server/compiler/registry/github"
-	"github.com/go-vela/server/compiler/types/yaml"
-	"github.com/go-vela/server/internal"
-	"github.com/go-vela/server/router/middleware/org"
-	"github.com/go-vela/server/router/middleware/pipeline"
-	"github.com/go-vela/server/router/middleware/repo"
-	"github.com/go-vela/server/router/middleware/user"
-	"github.com/go-vela/server/scm"
-	"github.com/go-vela/server/util"
+	"github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/compiler"
+	"github.com/Cargill/vela-server/compiler/registry/github"
+	"github.com/Cargill/vela-server/compiler/types/yaml"
+	"github.com/Cargill/vela-server/internal"
+	"github.com/Cargill/vela-server/router/middleware/org"
+	"github.com/Cargill/vela-server/router/middleware/pipeline"
+	"github.com/Cargill/vela-server/router/middleware/repo"
+	"github.com/Cargill/vela-server/router/middleware/user"
+	"github.com/Cargill/vela-server/scm"
+	"github.com/Cargill/vela-server/util"
 )
 
 // swagger:operation GET /api/v1/pipelines/{org}/{repo}/{pipeline}/templates pipelines GetTemplates

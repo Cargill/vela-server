@@ -6,7 +6,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/urfave/cli/v3"
 
-	cliMiddleware "github.com/go-vela/server/router/middleware/cli"
+	cliMiddleware "github.com/Cargill/vela-server/router/middleware/cli"
 )
 
 // CLI is a middleware function that attaches the cli client

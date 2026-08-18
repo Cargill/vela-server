@@ -9,7 +9,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/go-vela/server/scm/github"
+	"github.com/Cargill/vela-server/scm/github"
 )
 
 func TestSCM_FromContext(t *testing.T) {

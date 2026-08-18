@@ -5,8 +5,8 @@ package middleware
 import (
 	"github.com/gin-gonic/gin"
 
-	"github.com/go-vela/server/router/middleware/settings"
-	"github.com/go-vela/server/scm"
+	"github.com/Cargill/vela-server/router/middleware/settings"
+	"github.com/Cargill/vela-server/scm"
 )
 
 // Scm is a middleware function that initializes the scm and

@@ -5,9 +5,9 @@ package queue
 import (
 	"context"
 
-	"github.com/go-vela/server/api/types/settings"
-	"github.com/go-vela/server/compiler/types/pipeline"
-	"github.com/go-vela/server/queue/models"
+	"github.com/Cargill/vela-server/api/types/settings"
+	"github.com/Cargill/vela-server/compiler/types/pipeline"
+	"github.com/Cargill/vela-server/queue/models"
 )
 
 // Service represents the interface for Vela integrating

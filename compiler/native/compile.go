@@ -17,11 +17,11 @@ import (
 	"github.com/hashicorp/go-retryablehttp"
 	yml "go.yaml.in/yaml/v3"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/compiler/types/pipeline"
-	"github.com/go-vela/server/compiler/types/raw"
-	"github.com/go-vela/server/compiler/types/yaml"
-	"github.com/go-vela/server/constants"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/compiler/types/pipeline"
+	"github.com/Cargill/vela-server/compiler/types/raw"
+	"github.com/Cargill/vela-server/compiler/types/yaml"
+	"github.com/Cargill/vela-server/constants"
 )
 
 // ModifyRequest contains the payload passed to the modification endpoint.

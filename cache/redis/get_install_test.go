@@ -7,7 +7,7 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/go-vela/server/cache/models"
+	"github.com/Cargill/vela-server/cache/models"
 )
 
 func TestRedis_GetInstallToken(t *testing.T) {

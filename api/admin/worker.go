@@ -9,10 +9,10 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/internal/token"
-	"github.com/go-vela/server/util"
+	"github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/internal/token"
+	"github.com/Cargill/vela-server/util"
 )
 
 // swagger:operation POST /api/v1/admin/workers/{worker}/register admin RegisterToken

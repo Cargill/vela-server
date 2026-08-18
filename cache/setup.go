@@ -7,7 +7,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/cache/redis"
+	"github.com/Cargill/vela-server/cache/redis"
 )
 
 // Setup represents the configuration necessary for
@@ -33,7 +33,7 @@ func (s *Setup) Redis(ctx context.Context) (Service, error) {
 
 	// create new Redis queue service
 	//
-	// https://pkg.go.dev/github.com/go-vela/server/queue/redis?tab=doc#New
+	// https://pkg.go.dev/github.com/Cargill/vela-server/queue/redis?tab=doc#New
 	return redis.New(
 		ctx,
 		redis.WithAddress(s.Address),

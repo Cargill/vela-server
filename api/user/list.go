@@ -10,9 +10,9 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/api"
-	"github.com/go-vela/server/database"
-	"github.com/go-vela/server/util"
+	"github.com/Cargill/vela-server/api"
+	"github.com/Cargill/vela-server/database"
+	"github.com/Cargill/vela-server/util"
 )
 
 // swagger:operation GET /api/v1/users users ListUsers

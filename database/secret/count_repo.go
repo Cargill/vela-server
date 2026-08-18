@@ -7,8 +7,8 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/constants"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/constants"
 )
 
 // CountSecretsForRepo gets the count of secrets by org and repo name from the database.

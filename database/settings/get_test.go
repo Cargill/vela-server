@@ -7,9 +7,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/go-vela/server/api/types/settings"
-	"github.com/go-vela/server/database/testutils"
-	"github.com/go-vela/server/database/types"
+	"github.com/Cargill/vela-server/api/types/settings"
+	"github.com/Cargill/vela-server/database/testutils"
+	"github.com/Cargill/vela-server/database/types"
 )
 
 func TestSettings_Engine_GetSettings(t *testing.T) {

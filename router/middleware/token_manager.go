@@ -5,7 +5,7 @@ package middleware
 import (
 	"github.com/gin-gonic/gin"
 
-	"github.com/go-vela/server/internal/token"
+	"github.com/Cargill/vela-server/internal/token"
 )
 
 // TokenManager is a middleware function that attaches the token manager

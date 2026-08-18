@@ -7,8 +7,8 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/constants"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/constants"
 )
 
 // CountReposForUser gets the count of repos by user ID from the database.

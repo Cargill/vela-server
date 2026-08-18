@@ -13,8 +13,8 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/microcosm-cc/bluemonday"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/constants"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/constants"
 )
 
 // HandleError appends the error to the handler chain for logging and outputs it.

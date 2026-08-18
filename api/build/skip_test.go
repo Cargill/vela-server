@@ -5,7 +5,7 @@ package build
 import (
 	"testing"
 
-	"github.com/go-vela/server/compiler/types/pipeline"
+	"github.com/Cargill/vela-server/compiler/types/pipeline"
 )
 
 func Test_SkipEmptyBuild(t *testing.T) {

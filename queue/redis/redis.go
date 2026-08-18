@@ -12,7 +12,7 @@ import (
 	"github.com/redis/go-redis/v9"
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/api/types/settings"
+	"github.com/Cargill/vela-server/api/types/settings"
 )
 
 type config struct {

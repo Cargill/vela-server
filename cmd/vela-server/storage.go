@@ -8,7 +8,7 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/urfave/cli/v3"
 
-	"github.com/go-vela/server/storage"
+	"github.com/Cargill/vela-server/storage"
 )
 
 func setupStorage(_ context.Context, c *cli.Command) (storage.Storage, error) {
@@ -31,6 +31,6 @@ func setupStorage(_ context.Context, c *cli.Command) (storage.Storage, error) {
 	}
 	// setup the storage
 	//
-	// https://pkg.go.dev/github.com/go-vela/server/storage#New
+	// https://pkg.go.dev/github.com/Cargill/vela-server/storage#New
 	return storage.New(_setup)
 }

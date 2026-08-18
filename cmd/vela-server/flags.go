@@ -12,8 +12,8 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/urfave/cli/v3"
 
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/internal/image"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/internal/image"
 )
 
 // Flags represents all supported command line

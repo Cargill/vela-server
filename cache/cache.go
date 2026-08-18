@@ -8,7 +8,7 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/urfave/cli/v3"
 
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/constants"
 )
 
 // FromCLICommand helper function to setup the queue from the CLI arguments.
@@ -25,7 +25,7 @@ func FromCLICommand(ctx context.Context, c *cli.Command) (Service, error) {
 
 	// setup the queue
 	//
-	// https://pkg.go.dev/github.com/go-vela/server/queue?tab=doc#New
+	// https://pkg.go.dev/github.com/Cargill/vela-server/queue?tab=doc#New
 	return New(ctx, _setup)
 }
 
@@ -42,7 +42,7 @@ func New(ctx context.Context, s *Setup) (Service, error) {
 	case constants.DriverRedis:
 		// handle the Redis queue driver being provided
 		//
-		// https://pkg.go.dev/github.com/go-vela/server/queue?tab=doc#Setup.Redis
+		// https://pkg.go.dev/github.com/Cargill/vela-server/queue?tab=doc#Setup.Redis
 		return s.Redis(ctx)
 	default:
 		// handle an invalid queue driver being provided

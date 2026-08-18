@@ -5,8 +5,8 @@ package settings
 import (
 	"context"
 
-	"github.com/go-vela/server/api/types/settings"
-	"github.com/go-vela/server/database/types"
+	"github.com/Cargill/vela-server/api/types/settings"
+	"github.com/Cargill/vela-server/database/types"
 )
 
 // GetSettings gets platform settings from the database.

@@ -14,14 +14,14 @@ import (
 	"github.com/urfave/cli/v3"
 	"go.yaml.in/yaml/v3"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/compiler"
-	"github.com/go-vela/server/compiler/native"
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/internal"
-	pipelineMiddleware "github.com/go-vela/server/router/middleware/pipeline"
-	repoMiddleware "github.com/go-vela/server/router/middleware/repo"
-	userMiddleware "github.com/go-vela/server/router/middleware/user"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/compiler"
+	"github.com/Cargill/vela-server/compiler/native"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/internal"
+	pipelineMiddleware "github.com/Cargill/vela-server/router/middleware/pipeline"
+	repoMiddleware "github.com/Cargill/vela-server/router/middleware/repo"
+	userMiddleware "github.com/Cargill/vela-server/router/middleware/user"
 )
 
 func TestExpandPipelineStagesReturnsCleanYAML(t *testing.T) {

@@ -8,8 +8,8 @@ import (
 
 	"github.com/DATA-DOG/go-sqlmock"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/database/testutils"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/database/testutils"
 )
 
 func TestLog_Engine_CreateLog(t *testing.T) {

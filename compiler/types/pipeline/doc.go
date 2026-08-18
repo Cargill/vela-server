@@ -4,5 +4,5 @@
 //
 // Usage:
 //
-//	import "github.com/go-vela/server/compiler/types/pipeline"
+//	import "github.com/Cargill/vela-server/compiler/types/pipeline"
 package pipeline

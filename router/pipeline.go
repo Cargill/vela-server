@@ -5,11 +5,11 @@ package router
 import (
 	"github.com/gin-gonic/gin"
 
-	"github.com/go-vela/server/api/pipeline"
-	"github.com/go-vela/server/router/middleware/org"
-	"github.com/go-vela/server/router/middleware/perm"
-	pmiddleware "github.com/go-vela/server/router/middleware/pipeline"
-	"github.com/go-vela/server/router/middleware/repo"
+	"github.com/Cargill/vela-server/api/pipeline"
+	"github.com/Cargill/vela-server/router/middleware/org"
+	"github.com/Cargill/vela-server/router/middleware/perm"
+	pmiddleware "github.com/Cargill/vela-server/router/middleware/pipeline"
+	"github.com/Cargill/vela-server/router/middleware/repo"
 )
 
 // PipelineHandlers is a function that extends the provided base router group

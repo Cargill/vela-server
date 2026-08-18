@@ -5,7 +5,7 @@ package middleware
 import (
 	"github.com/gin-gonic/gin"
 
-	"github.com/go-vela/server/secret"
+	"github.com/Cargill/vela-server/secret"
 )
 
 // Secret is a middleware function that attaches the secret used for

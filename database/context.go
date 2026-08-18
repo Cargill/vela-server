@@ -8,7 +8,7 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/urfave/cli/v3"
 
-	"github.com/go-vela/server/tracing"
+	"github.com/Cargill/vela-server/tracing"
 )
 
 const key = "database"

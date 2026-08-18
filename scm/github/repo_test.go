@@ -15,8 +15,8 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-github/v84/github"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/constants"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/constants"
 )
 
 func TestGithub_Config_YML(t *testing.T) {

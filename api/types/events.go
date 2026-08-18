@@ -5,8 +5,8 @@ package types
 import (
 	"fmt"
 
-	"github.com/go-vela/server/api/types/actions"
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/api/types/actions"
+	"github.com/Cargill/vela-server/constants"
 )
 
 // Events is the API representation of the various events that generate a

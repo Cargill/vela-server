@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/go-vela/server/compiler/types/pipeline"
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/compiler/types/pipeline"
+	"github.com/Cargill/vela-server/constants"
 )
 
 // Service is the API representation of a service in a build.

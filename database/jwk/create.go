@@ -10,8 +10,8 @@ import (
 	"github.com/lestrrat-go/jwx/v3/jwk"
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/database/types"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/database/types"
 )
 
 // CreateJWK creates a new JWK in the database.

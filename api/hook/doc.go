@@ -4,5 +4,5 @@
 //
 // Usage:
 //
-//	import "github.com/go-vela/server/api/hook"
+//	import "github.com/Cargill/vela-server/api/hook"
 package hook

@@ -5,7 +5,7 @@ package middleware
 import (
 	"github.com/gin-gonic/gin"
 
-	"github.com/go-vela/server/database"
+	"github.com/Cargill/vela-server/database"
 )
 
 // Database is a middleware function that initializes the database and

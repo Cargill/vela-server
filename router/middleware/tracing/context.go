@@ -5,7 +5,7 @@ package tracing
 import (
 	"context"
 
-	"github.com/go-vela/server/tracing"
+	"github.com/Cargill/vela-server/tracing"
 )
 
 const key = "tracing"

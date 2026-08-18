@@ -8,8 +8,8 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/urfave/cli/v3"
 
-	"github.com/go-vela/server/database"
-	"github.com/go-vela/server/internal/token"
+	"github.com/Cargill/vela-server/database"
+	"github.com/Cargill/vela-server/internal/token"
 )
 
 // helper function to setup the tokenmanager from the CLI arguments.

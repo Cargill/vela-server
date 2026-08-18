@@ -9,8 +9,8 @@ import (
 	"github.com/DATA-DOG/go-sqlmock"
 	"github.com/google/go-cmp/cmp"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/database/testutils"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/database/testutils"
 )
 
 func TestDashboard_Engine_UpdateDashboard(t *testing.T) {

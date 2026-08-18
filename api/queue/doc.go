@@ -4,5 +4,5 @@
 //
 // Usage:
 //
-//	import "github.com/go-vela/server/api/queue"
+//	import "github.com/Cargill/vela-server/api/queue"
 package queue

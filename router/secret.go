@@ -5,8 +5,8 @@ package router
 import (
 	"github.com/gin-gonic/gin"
 
-	"github.com/go-vela/server/api/secret"
-	"github.com/go-vela/server/router/middleware/perm"
+	"github.com/Cargill/vela-server/api/secret"
+	"github.com/Cargill/vela-server/router/middleware/perm"
 )
 
 // SecretHandlers is a function that extends the provided base router group

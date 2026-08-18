@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/constants"
 )
 
 func TestTypes_Schedule_Getters(t *testing.T) {

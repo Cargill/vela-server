@@ -5,7 +5,7 @@ package registry
 import (
 	"context"
 
-	api "github.com/go-vela/server/api/types"
+	api "github.com/Cargill/vela-server/api/types"
 )
 
 // Service represents the interface for Vela integrating

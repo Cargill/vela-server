@@ -13,16 +13,16 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/cache"
-	"github.com/go-vela/server/compiler"
-	"github.com/go-vela/server/compiler/types/pipeline"
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/database"
-	"github.com/go-vela/server/internal"
-	"github.com/go-vela/server/queue"
-	"github.com/go-vela/server/queue/models"
-	"github.com/go-vela/server/scm"
+	"github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/cache"
+	"github.com/Cargill/vela-server/compiler"
+	"github.com/Cargill/vela-server/compiler/types/pipeline"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/database"
+	"github.com/Cargill/vela-server/internal"
+	"github.com/Cargill/vela-server/queue"
+	"github.com/Cargill/vela-server/queue/models"
+	"github.com/Cargill/vela-server/scm"
 )
 
 // CompileAndPublishConfig is a struct that contains information for the CompileAndPublish function.

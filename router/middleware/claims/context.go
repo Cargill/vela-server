@@ -5,7 +5,7 @@ package claims
 import (
 	"context"
 
-	"github.com/go-vela/server/internal/token"
+	"github.com/Cargill/vela-server/internal/token"
 )
 
 const key = "claims"

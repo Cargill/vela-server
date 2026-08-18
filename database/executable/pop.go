@@ -7,9 +7,9 @@ import (
 
 	"gorm.io/gorm/clause"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/database/types"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/database/types"
 )
 
 // PopBuildExecutable pops a build executable by build_id from the database.

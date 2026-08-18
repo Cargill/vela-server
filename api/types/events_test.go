@@ -8,8 +8,8 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/go-vela/server/api/types/actions"
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/api/types/actions"
+	"github.com/Cargill/vela-server/constants"
 )
 
 func TestTypes_Events_Getters(t *testing.T) {

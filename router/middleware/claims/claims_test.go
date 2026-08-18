@@ -16,12 +16,12 @@ import (
 	"github.com/golang-jwt/jwt/v5"
 	"github.com/sirupsen/logrus"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/database"
-	"github.com/go-vela/server/internal/token"
-	"github.com/go-vela/server/scm"
-	"github.com/go-vela/server/scm/github"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/database"
+	"github.com/Cargill/vela-server/internal/token"
+	"github.com/Cargill/vela-server/scm"
+	"github.com/Cargill/vela-server/scm/github"
 )
 
 func TestClaims_Retrieve(t *testing.T) {

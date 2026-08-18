@@ -9,7 +9,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/util"
+	"github.com/Cargill/vela-server/util"
 )
 
 // Retrieve gets the org in the given context.

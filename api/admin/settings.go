@@ -10,15 +10,15 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/api/types/settings"
-	"github.com/go-vela/server/compiler/native"
-	"github.com/go-vela/server/database"
-	"github.com/go-vela/server/internal/image"
-	"github.com/go-vela/server/queue"
-	cliMiddleware "github.com/go-vela/server/router/middleware/cli"
-	sMiddleware "github.com/go-vela/server/router/middleware/settings"
-	uMiddleware "github.com/go-vela/server/router/middleware/user"
-	"github.com/go-vela/server/util"
+	"github.com/Cargill/vela-server/api/types/settings"
+	"github.com/Cargill/vela-server/compiler/native"
+	"github.com/Cargill/vela-server/database"
+	"github.com/Cargill/vela-server/internal/image"
+	"github.com/Cargill/vela-server/queue"
+	cliMiddleware "github.com/Cargill/vela-server/router/middleware/cli"
+	sMiddleware "github.com/Cargill/vela-server/router/middleware/settings"
+	uMiddleware "github.com/Cargill/vela-server/router/middleware/user"
+	"github.com/Cargill/vela-server/util"
 )
 
 // swagger:operation GET /api/v1/admin/settings admin GetSettings

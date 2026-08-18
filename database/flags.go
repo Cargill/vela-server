@@ -10,7 +10,7 @@ import (
 
 	"github.com/urfave/cli/v3"
 
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/constants"
 )
 
 // Flags represents all supported command line interface (CLI) flags for the database.

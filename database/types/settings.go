@@ -11,8 +11,8 @@ import (
 
 	"github.com/lib/pq"
 
-	"github.com/go-vela/server/api/types/settings"
-	"github.com/go-vela/server/util"
+	"github.com/Cargill/vela-server/api/types/settings"
+	"github.com/Cargill/vela-server/util"
 )
 
 var (

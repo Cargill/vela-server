@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/go-vela/server/compiler/types/pipeline"
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/compiler/types/pipeline"
+	"github.com/Cargill/vela-server/constants"
 )
 
 func TestRedis_Client_Route(t *testing.T) {

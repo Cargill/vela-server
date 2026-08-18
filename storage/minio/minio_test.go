@@ -5,7 +5,7 @@ package minio
 import (
 	"testing"
 
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/constants"
 )
 
 var (

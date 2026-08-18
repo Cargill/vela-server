@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"testing"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/database/testutils"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/database/testutils"
 )
 
 func TestTypes_Worker_Nullify(t *testing.T) {

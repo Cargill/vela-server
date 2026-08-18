@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/go-vela/server/tracing"
+	"github.com/Cargill/vela-server/tracing"
 )
 
 // ClientOpt represents a configuration option to initialize the scm client for GitHub.

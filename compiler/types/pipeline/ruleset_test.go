@@ -5,7 +5,7 @@ package pipeline
 import (
 	"testing"
 
-	"github.com/go-vela/server/compiler/types/raw"
+	"github.com/Cargill/vela-server/compiler/types/raw"
 )
 
 func TestPipeline_Ruleset_Match(t *testing.T) {
@@ -310,7 +310,7 @@ func BenchmarkMatch_FullRuleset(b *testing.B) {
 		Comment:  "test comment",
 		Event:    "push",
 		Path:     []string{"path/to/file"},
-		Repo:     "github.com/go-vela/server",
+		Repo:     "github.com/Cargill/vela-server",
 		Sender:   "user",
 		Status:   "success",
 		Tag:      "v1.0.0",
@@ -326,7 +326,7 @@ func BenchmarkMatch_FullRuleset(b *testing.B) {
 			Comment:  []string{"test comment"},
 			Event:    []string{"push"},
 			Path:     []string{"path/to/file"},
-			Repo:     []string{"github.com/go-vela/server"},
+			Repo:     []string{"github.com/Cargill/vela-server"},
 			Sender:   []string{"user"},
 			Status:   []string{"success"},
 			Tag:      []string{"v1.0.0"},
@@ -354,7 +354,7 @@ func BenchmarkMatch_FullRulesetEarlyAndExit(b *testing.B) {
 		Comment:  "test comment",
 		Event:    "push",
 		Path:     []string{"path/to/file"},
-		Repo:     "github.com/go-vela/server",
+		Repo:     "github.com/Cargill/vela-server",
 		Sender:   "user",
 		Status:   "success",
 		Tag:      "v1.0.0",
@@ -370,7 +370,7 @@ func BenchmarkMatch_FullRulesetEarlyAndExit(b *testing.B) {
 			Comment:  []string{"test comment"},
 			Event:    []string{"push"},
 			Path:     []string{"path/to/file"},
-			Repo:     []string{"github.com/go-vela/server"},
+			Repo:     []string{"github.com/Cargill/vela-server"},
 			Sender:   []string{"user"},
 			Status:   []string{"success"},
 			Tag:      []string{"v1.0.0"},
@@ -398,7 +398,7 @@ func BenchmarkMatch_FullRulesetEarlyOrExit(b *testing.B) {
 		Comment:  "test comment",
 		Event:    "push",
 		Path:     []string{"path/to/file"},
-		Repo:     "github.com/go-vela/server",
+		Repo:     "github.com/Cargill/vela-server",
 		Sender:   "user",
 		Status:   "success",
 		Tag:      "v1.0.0",
@@ -414,7 +414,7 @@ func BenchmarkMatch_FullRulesetEarlyOrExit(b *testing.B) {
 			Comment:  []string{"test comment"},
 			Event:    []string{"push"},
 			Path:     []string{"path/to/file"},
-			Repo:     []string{"github.com/go-vela/server"},
+			Repo:     []string{"github.com/Cargill/vela-server"},
 			Sender:   []string{"user"},
 			Status:   []string{"success"},
 			Tag:      []string{"v1.0.0"},

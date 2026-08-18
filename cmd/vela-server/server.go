@@ -20,14 +20,14 @@ import (
 	"gorm.io/gorm"
 	"k8s.io/apimachinery/pkg/util/wait"
 
-	"github.com/go-vela/server/api/types/settings"
-	"github.com/go-vela/server/cache"
-	"github.com/go-vela/server/compiler/native"
-	"github.com/go-vela/server/database"
-	"github.com/go-vela/server/queue"
-	"github.com/go-vela/server/router"
-	"github.com/go-vela/server/router/middleware"
-	"github.com/go-vela/server/tracing"
+	"github.com/Cargill/vela-server/api/types/settings"
+	"github.com/Cargill/vela-server/cache"
+	"github.com/Cargill/vela-server/compiler/native"
+	"github.com/Cargill/vela-server/database"
+	"github.com/Cargill/vela-server/queue"
+	"github.com/Cargill/vela-server/router"
+	"github.com/Cargill/vela-server/router/middleware"
+	"github.com/Cargill/vela-server/tracing"
 )
 
 //nolint:funlen,gocyclo // ignore function length and cyclomatic complexity

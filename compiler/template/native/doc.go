@@ -6,5 +6,5 @@
 //
 // Usage:
 //
-//	import "github.com/go-vela/server/compiler/template/native"
+//	import "github.com/Cargill/vela-server/compiler/template/native"
 package native

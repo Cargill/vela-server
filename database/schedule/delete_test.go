@@ -10,9 +10,9 @@ import (
 	"github.com/DATA-DOG/go-sqlmock"
 	"github.com/adhocore/gronx"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/database/testutils"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/database/testutils"
 )
 
 func TestSchedule_Engine_DeleteSchedule(t *testing.T) {

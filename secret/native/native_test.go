@@ -5,7 +5,7 @@ package native
 import (
 	"testing"
 
-	"github.com/go-vela/server/database"
+	"github.com/Cargill/vela-server/database"
 )
 
 func TestNative_New(t *testing.T) {

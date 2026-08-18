@@ -3,7 +3,7 @@
 package native
 
 import (
-	"github.com/go-vela/server/api/types/settings"
+	"github.com/Cargill/vela-server/api/types/settings"
 )
 
 // GetSettings retrieves the api settings type.

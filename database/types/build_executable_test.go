@@ -7,8 +7,8 @@ import (
 	"reflect"
 	"testing"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/constants"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/constants"
 )
 
 func TestDatabase_BuildExecutable_Compress(t *testing.T) {

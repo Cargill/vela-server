@@ -10,9 +10,9 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/go-vela/server/database"
-	"github.com/go-vela/server/secret"
-	"github.com/go-vela/server/secret/native"
+	"github.com/Cargill/vela-server/database"
+	"github.com/Cargill/vela-server/secret"
+	"github.com/Cargill/vela-server/secret/native"
 )
 
 func TestMiddleware_Secret(t *testing.T) {

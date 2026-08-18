@@ -9,7 +9,7 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/go-vela/server/compiler/types/yaml"
+	"github.com/Cargill/vela-server/compiler/types/yaml"
 )
 
 func TestInternal_ParseYAML(t *testing.T) {

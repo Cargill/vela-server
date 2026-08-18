@@ -5,7 +5,7 @@ package types
 import (
 	"database/sql"
 
-	api "github.com/go-vela/server/api/types"
+	api "github.com/Cargill/vela-server/api/types"
 )
 
 // QueueBuild is the database representation of the builds in the queue.

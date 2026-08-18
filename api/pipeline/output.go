@@ -10,7 +10,7 @@ import (
 	"github.com/gin-gonic/gin"
 	yml "go.yaml.in/yaml/v3"
 
-	"github.com/go-vela/server/util"
+	"github.com/Cargill/vela-server/util"
 )
 
 const (

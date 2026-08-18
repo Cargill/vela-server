@@ -12,7 +12,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/go-vela/server/internal"
+	"github.com/Cargill/vela-server/internal"
 )
 
 func TestMiddleware_NoCache(t *testing.T) {

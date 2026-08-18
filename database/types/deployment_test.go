@@ -9,8 +9,8 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/lib/pq"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/compiler/types/raw"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/compiler/types/raw"
 )
 
 func TestDatabase_Deployment_Nullify(t *testing.T) {

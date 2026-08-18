@@ -5,7 +5,7 @@ package log
 import (
 	"context"
 
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/constants"
 )
 
 // Consider partitioning as the logs table will be running hot with the current

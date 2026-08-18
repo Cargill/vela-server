@@ -4,5 +4,5 @@
 //
 // Usage:
 //
-//	import "github.com/go-vela/server/api/user"
+//	import "github.com/Cargill/vela-server/api/user"
 package user

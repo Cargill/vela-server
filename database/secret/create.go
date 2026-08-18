@@ -9,9 +9,9 @@ import (
 	"github.com/sirupsen/logrus"
 	"gorm.io/gorm"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/database/types"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/database/types"
 )
 
 // CreateSecret creates a new secret in the database.

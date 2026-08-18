@@ -11,8 +11,8 @@ import (
 
 	"github.com/google/uuid"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/util"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/util"
 )
 
 var (

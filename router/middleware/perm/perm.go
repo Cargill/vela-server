@@ -12,17 +12,17 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/cache/models"
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/internal/token"
-	"github.com/go-vela/server/router/middleware/build"
-	"github.com/go-vela/server/router/middleware/claims"
-	"github.com/go-vela/server/router/middleware/repo"
-	"github.com/go-vela/server/router/middleware/settings"
-	"github.com/go-vela/server/router/middleware/user"
-	"github.com/go-vela/server/scm"
-	"github.com/go-vela/server/util"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/cache/models"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/internal/token"
+	"github.com/Cargill/vela-server/router/middleware/build"
+	"github.com/Cargill/vela-server/router/middleware/claims"
+	"github.com/Cargill/vela-server/router/middleware/repo"
+	"github.com/Cargill/vela-server/router/middleware/settings"
+	"github.com/Cargill/vela-server/router/middleware/user"
+	"github.com/Cargill/vela-server/scm"
+	"github.com/Cargill/vela-server/util"
 )
 
 // MustPlatformAdmin ensures the user has admin access to the platform.

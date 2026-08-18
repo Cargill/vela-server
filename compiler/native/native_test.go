@@ -9,10 +9,10 @@ import (
 
 	"github.com/urfave/cli/v3"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/api/types/settings"
-	"github.com/go-vela/server/compiler/registry/github"
-	"github.com/go-vela/server/internal"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/api/types/settings"
+	"github.com/Cargill/vela-server/compiler/registry/github"
+	"github.com/Cargill/vela-server/internal"
 )
 
 func TestNative_New(t *testing.T) {

@@ -5,7 +5,7 @@ package settings
 import (
 	"context"
 
-	"github.com/go-vela/server/api/types/settings"
+	"github.com/Cargill/vela-server/api/types/settings"
 )
 
 // SettingsInterface represents the Vela interface for settings

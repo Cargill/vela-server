@@ -6,5 +6,5 @@
 //
 // Usage:
 //
-//	import "github.com/go-vela/server/template"
+//	import "github.com/Cargill/vela-server/template"
 package template

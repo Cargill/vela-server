@@ -10,12 +10,12 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/database"
-	"github.com/go-vela/server/queue"
-	"github.com/go-vela/server/queue/models"
-	"github.com/go-vela/server/scm"
+	"github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/database"
+	"github.com/Cargill/vela-server/queue"
+	"github.com/Cargill/vela-server/queue/models"
+	"github.com/Cargill/vela-server/scm"
 )
 
 // Enqueue is a helper function that pushes a queue item (build, repo, user) to the queue.

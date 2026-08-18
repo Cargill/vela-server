@@ -3,8 +3,8 @@
 package build
 
 import (
-	"github.com/go-vela/server/compiler/types/pipeline"
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/compiler/types/pipeline"
+	"github.com/Cargill/vela-server/constants"
 )
 
 // SkipEmptyBuild checks if the build should be skipped due to it

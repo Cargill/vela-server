@@ -4,5 +4,5 @@
 //
 // Usage:
 //
-//	import "github.com/go-vela/server/api/scm"
+//	import "github.com/Cargill/vela-server/api/scm"
 package scm

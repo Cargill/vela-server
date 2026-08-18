@@ -10,7 +10,7 @@ import (
 	"github.com/redis/go-redis/v9"
 	"golang.org/x/crypto/nacl/sign"
 
-	"github.com/go-vela/server/queue/models"
+	"github.com/Cargill/vela-server/queue/models"
 )
 
 // Pop grabs an item from the specified route off the queue.

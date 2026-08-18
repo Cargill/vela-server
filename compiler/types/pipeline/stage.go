@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"maps"
 
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/constants"
 )
 
 type (

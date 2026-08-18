@@ -10,7 +10,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/urfave/cli/v3"
 
-	"github.com/go-vela/server/tracing"
+	"github.com/Cargill/vela-server/tracing"
 )
 
 func TestDatabase_FromContext(t *testing.T) {

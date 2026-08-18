@@ -10,7 +10,7 @@ import (
 
 	"github.com/alicebob/miniredis/v2"
 
-	api "github.com/go-vela/server/api/types"
+	api "github.com/Cargill/vela-server/api/types"
 )
 
 // Ptr is a helper routine that allocates a new T value

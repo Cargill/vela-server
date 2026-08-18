@@ -6,7 +6,7 @@ import (
 	"context"
 	"time"
 
-	api "github.com/go-vela/server/api/types"
+	api "github.com/Cargill/vela-server/api/types"
 )
 
 // Storage defines the service interface for object storage operations.

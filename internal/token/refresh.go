@@ -7,8 +7,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/database"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/database"
 )
 
 // Refresh returns a new access token, if the provided refreshToken is valid.

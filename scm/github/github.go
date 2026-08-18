@@ -17,9 +17,9 @@ import (
 	"github.com/sirupsen/logrus"
 	"golang.org/x/oauth2"
 
-	"github.com/go-vela/server/api/types/settings"
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/tracing"
+	"github.com/Cargill/vela-server/api/types/settings"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/tracing"
 )
 
 const (

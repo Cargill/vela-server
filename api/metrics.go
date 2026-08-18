@@ -13,12 +13,12 @@ import (
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/cache"
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/database"
-	"github.com/go-vela/server/queue"
-	"github.com/go-vela/server/router/middleware/settings"
-	"github.com/go-vela/server/scm"
+	"github.com/Cargill/vela-server/cache"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/database"
+	"github.com/Cargill/vela-server/queue"
+	"github.com/Cargill/vela-server/router/middleware/settings"
+	"github.com/Cargill/vela-server/scm"
 )
 
 // MetricsQueryParameters holds query parameter information pertaining to requested metrics.

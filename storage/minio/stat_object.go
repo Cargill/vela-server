@@ -8,7 +8,7 @@ import (
 
 	"github.com/minio/minio-go/v7"
 
-	"github.com/go-vela/server/api/types"
+	"github.com/Cargill/vela-server/api/types"
 )
 
 // StatObject retrieves the metadata of an object from the MinIO storage.

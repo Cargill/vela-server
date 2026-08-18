@@ -9,9 +9,9 @@ import (
 
 	"github.com/DATA-DOG/go-sqlmock"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/database/testutils"
-	"github.com/go-vela/server/database/types"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/database/testutils"
+	"github.com/Cargill/vela-server/database/types"
 )
 
 func TestSecret_Engine_GetSecret(t *testing.T) {

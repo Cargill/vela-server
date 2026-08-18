@@ -9,7 +9,7 @@ import (
 
 	"go.yaml.in/yaml/v3"
 
-	api "github.com/go-vela/server/api/types"
+	api "github.com/Cargill/vela-server/api/types"
 )
 
 func TestBuild_TemplateSlice_UnmarshalYAML(t *testing.T) {

@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/go-vela/server/database"
+	"github.com/Cargill/vela-server/database"
 )
 
 func TestSecret_Setup_Native(t *testing.T) {

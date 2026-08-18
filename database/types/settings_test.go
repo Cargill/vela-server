@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"testing"
 
-	api "github.com/go-vela/server/api/types/settings"
+	api "github.com/Cargill/vela-server/api/types/settings"
 )
 
 func TestTypes_Platform_Nullify(t *testing.T) {

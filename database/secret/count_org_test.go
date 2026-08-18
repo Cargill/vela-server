@@ -9,8 +9,8 @@ import (
 
 	"github.com/DATA-DOG/go-sqlmock"
 
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/database/testutils"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/database/testutils"
 )
 
 func TestSecret_Engine_CountSecretsForOrg(t *testing.T) {

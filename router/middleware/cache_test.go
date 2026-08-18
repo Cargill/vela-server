@@ -10,8 +10,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/go-vela/server/cache"
-	"github.com/go-vela/server/cache/redis"
+	"github.com/Cargill/vela-server/cache"
+	"github.com/Cargill/vela-server/cache/redis"
 )
 
 func TestMiddleware_Cache(t *testing.T) {

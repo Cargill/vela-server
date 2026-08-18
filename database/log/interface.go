@@ -5,7 +5,7 @@ package log
 import (
 	"context"
 
-	api "github.com/go-vela/server/api/types"
+	api "github.com/Cargill/vela-server/api/types"
 )
 
 // LogInterface represents the Vela interface for log

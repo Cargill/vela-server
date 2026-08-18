@@ -6,5 +6,5 @@
 //
 // Usage:
 //
-//	import "github.com/go-vela/server/compiler"
+//	import "github.com/Cargill/vela-server/compiler"
 package compiler

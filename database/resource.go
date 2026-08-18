@@ -5,22 +5,22 @@ package database
 import (
 	"context"
 
-	"github.com/go-vela/server/database/build"
-	"github.com/go-vela/server/database/dashboard"
-	"github.com/go-vela/server/database/deployment"
-	"github.com/go-vela/server/database/executable"
-	"github.com/go-vela/server/database/hook"
-	"github.com/go-vela/server/database/jwk"
-	"github.com/go-vela/server/database/log"
-	"github.com/go-vela/server/database/pipeline"
-	"github.com/go-vela/server/database/repo"
-	"github.com/go-vela/server/database/schedule"
-	"github.com/go-vela/server/database/secret"
-	"github.com/go-vela/server/database/service"
-	"github.com/go-vela/server/database/settings"
-	"github.com/go-vela/server/database/step"
-	"github.com/go-vela/server/database/user"
-	"github.com/go-vela/server/database/worker"
+	"github.com/Cargill/vela-server/database/build"
+	"github.com/Cargill/vela-server/database/dashboard"
+	"github.com/Cargill/vela-server/database/deployment"
+	"github.com/Cargill/vela-server/database/executable"
+	"github.com/Cargill/vela-server/database/hook"
+	"github.com/Cargill/vela-server/database/jwk"
+	"github.com/Cargill/vela-server/database/log"
+	"github.com/Cargill/vela-server/database/pipeline"
+	"github.com/Cargill/vela-server/database/repo"
+	"github.com/Cargill/vela-server/database/schedule"
+	"github.com/Cargill/vela-server/database/secret"
+	"github.com/Cargill/vela-server/database/service"
+	"github.com/Cargill/vela-server/database/settings"
+	"github.com/Cargill/vela-server/database/step"
+	"github.com/Cargill/vela-server/database/user"
+	"github.com/Cargill/vela-server/database/worker"
 )
 
 // NewResources creates and returns the database agnostic engines for resources.
@@ -164,7 +164,7 @@ func (e *engine) NewResources(ctx context.Context) error {
 
 	// create the database agnostic engine for secrets
 	//
-	// https://pkg.go.dev/github.com/go-vela/server/database/secret#New
+	// https://pkg.go.dev/github.com/Cargill/vela-server/database/secret#New
 	e.SecretInterface, err = secret.New(
 		secret.WithContext(ctx),
 		secret.WithClient(e.client),

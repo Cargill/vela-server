@@ -11,9 +11,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/go-vela/server/cache/models"
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/util"
+	"github.com/Cargill/vela-server/cache/models"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/util"
 )
 
 // StoreInstallToken computes an HMAC-SHA256 of the token and stores it in Redis with a TTL.

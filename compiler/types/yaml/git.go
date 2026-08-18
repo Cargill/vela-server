@@ -5,7 +5,7 @@ package yaml
 import (
 	"strings"
 
-	"github.com/go-vela/server/compiler/types/pipeline"
+	"github.com/Cargill/vela-server/compiler/types/pipeline"
 )
 
 // Git is the yaml representation of git configurations for a pipeline.

@@ -5,12 +5,12 @@ package router
 import (
 	"github.com/gin-gonic/gin"
 
-	"github.com/go-vela/server/api/schedule"
-	"github.com/go-vela/server/router/middleware"
-	"github.com/go-vela/server/router/middleware/org"
-	"github.com/go-vela/server/router/middleware/perm"
-	"github.com/go-vela/server/router/middleware/repo"
-	sMiddleware "github.com/go-vela/server/router/middleware/schedule"
+	"github.com/Cargill/vela-server/api/schedule"
+	"github.com/Cargill/vela-server/router/middleware"
+	"github.com/Cargill/vela-server/router/middleware/org"
+	"github.com/Cargill/vela-server/router/middleware/perm"
+	"github.com/Cargill/vela-server/router/middleware/repo"
+	sMiddleware "github.com/Cargill/vela-server/router/middleware/schedule"
 )
 
 // ScheduleHandler is a function that extends the provided base router group

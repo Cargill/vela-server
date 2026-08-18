@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/go-vela/server/compiler/types/pipeline"
+	"github.com/Cargill/vela-server/compiler/types/pipeline"
 )
 
 func TestYaml_Worker_ToPipeline(t *testing.T) {

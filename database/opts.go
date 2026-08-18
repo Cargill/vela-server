@@ -6,7 +6,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/go-vela/server/tracing"
+	"github.com/Cargill/vela-server/tracing"
 )
 
 // EngineOpt represents a configuration option to initialize the database engine.

@@ -11,7 +11,7 @@ import (
 	"github.com/DATA-DOG/go-sqlmock"
 	"github.com/lestrrat-go/jwx/v3/jwk"
 
-	"github.com/go-vela/server/database/testutils"
+	"github.com/Cargill/vela-server/database/testutils"
 )
 
 func TestJWK_Engine_ListJWKs(t *testing.T) {

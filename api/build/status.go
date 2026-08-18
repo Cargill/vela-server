@@ -8,7 +8,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/router/middleware/build"
+	"github.com/Cargill/vela-server/router/middleware/build"
 )
 
 // swagger:operation GET /status/{org}/{repo}/{build} builds GetBuildStatus

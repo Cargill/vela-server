@@ -6,7 +6,7 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/constants"
 )
 
 // Log is the API representation of a log for a step in a build.

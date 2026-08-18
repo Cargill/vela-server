@@ -6,8 +6,8 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/database/types"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/database/types"
 )
 
 // RotateKeys removes all inactive keys and sets active keys to inactive.

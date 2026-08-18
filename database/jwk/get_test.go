@@ -11,7 +11,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/lestrrat-go/jwx/v3/jwk"
 
-	"github.com/go-vela/server/database/testutils"
+	"github.com/Cargill/vela-server/database/testutils"
 )
 
 func TestJWK_Engine_GetJWK(t *testing.T) {

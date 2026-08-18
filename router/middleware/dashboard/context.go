@@ -5,7 +5,7 @@ package dashboard
 import (
 	"context"
 
-	api "github.com/go-vela/server/api/types"
+	api "github.com/Cargill/vela-server/api/types"
 )
 
 const key = "dashboard"

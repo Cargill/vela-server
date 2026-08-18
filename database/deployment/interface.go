@@ -5,7 +5,7 @@ package deployment
 import (
 	"context"
 
-	api "github.com/go-vela/server/api/types"
+	api "github.com/Cargill/vela-server/api/types"
 )
 
 // DeploymentInterface represents the Vela interface for deployment

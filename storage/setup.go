@@ -8,8 +8,8 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/storage/minio"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/storage/minio"
 )
 
 // Setup represents the configuration necessary for

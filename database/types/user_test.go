@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"testing"
 
-	api "github.com/go-vela/server/api/types"
+	api "github.com/Cargill/vela-server/api/types"
 )
 
 func TestTypes_User_Decrypt(t *testing.T) {

@@ -12,7 +12,7 @@ import (
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
 
-	"github.com/go-vela/server/database/testutils"
+	"github.com/Cargill/vela-server/database/testutils"
 )
 
 func TestRepo_New(t *testing.T) {

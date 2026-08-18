@@ -11,8 +11,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/router/middleware/auth"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/router/middleware/auth"
 )
 
 const (

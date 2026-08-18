@@ -12,10 +12,10 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/google/go-cmp/cmp"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/compiler/types/pipeline"
-	"github.com/go-vela/server/compiler/types/raw"
-	"github.com/go-vela/server/compiler/types/yaml"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/compiler/types/pipeline"
+	"github.com/Cargill/vela-server/compiler/types/raw"
+	"github.com/Cargill/vela-server/compiler/types/yaml"
 )
 
 func TestNative_ExpandStages(t *testing.T) {

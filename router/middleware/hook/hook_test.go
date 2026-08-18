@@ -12,11 +12,11 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/sirupsen/logrus"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/database"
-	"github.com/go-vela/server/database/testutils"
-	"github.com/go-vela/server/router/middleware/org"
-	"github.com/go-vela/server/router/middleware/repo"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/database"
+	"github.com/Cargill/vela-server/database/testutils"
+	"github.com/Cargill/vela-server/router/middleware/org"
+	"github.com/Cargill/vela-server/router/middleware/repo"
 )
 
 func TestHook_Retrieve(t *testing.T) {

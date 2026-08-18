@@ -11,8 +11,8 @@ import (
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/database/testutils"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/database/testutils"
 )
 
 func TestWorker_New(t *testing.T) {

@@ -7,7 +7,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/constants"
 )
 
 // New creates and returns a Vela service capable of
@@ -19,7 +19,7 @@ import (
 func New(s *Setup) (Storage, error) {
 	// validate the setup being provided
 	//
-	// https://pkg.go.dev/github.com/go-vela/server/storage#Setup.Validate
+	// https://pkg.go.dev/github.com/Cargill/vela-server/storage#Setup.Validate
 	if s.Enable {
 		err := s.Validate()
 		if err != nil {
@@ -32,7 +32,7 @@ func New(s *Setup) (Storage, error) {
 		case constants.DriverMinio:
 			// handle the storage driver being provided
 			//
-			// https://pkg.go.dev/github.com/go-vela/server/storage?tab=doc#Setup.Minio
+			// https://pkg.go.dev/github.com/Cargill/vela-server/storage?tab=doc#Setup.Minio
 			return s.Minio()
 		default:
 			// handle an invalid storage driver being provided

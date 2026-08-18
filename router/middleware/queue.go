@@ -5,8 +5,8 @@ package middleware
 import (
 	"github.com/gin-gonic/gin"
 
-	"github.com/go-vela/server/queue"
-	"github.com/go-vela/server/router/middleware/settings"
+	"github.com/Cargill/vela-server/queue"
+	"github.com/Cargill/vela-server/router/middleware/settings"
 )
 
 // Queue is a middleware function that initializes the queue and

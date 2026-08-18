@@ -11,7 +11,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	api "github.com/go-vela/server/api/types"
+	api "github.com/Cargill/vela-server/api/types"
 )
 
 func TestGithub_Changeset(t *testing.T) {

@@ -5,7 +5,7 @@ package dashboard
 import (
 	"context"
 
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/constants"
 )
 
 const (

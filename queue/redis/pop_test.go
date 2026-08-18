@@ -11,7 +11,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"golang.org/x/crypto/nacl/sign"
 
-	"github.com/go-vela/server/queue/models"
+	"github.com/Cargill/vela-server/queue/models"
 )
 
 func TestRedis_Pop(t *testing.T) {

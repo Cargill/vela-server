@@ -10,8 +10,8 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"go.yaml.in/yaml/v3"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/compiler/types/raw"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/compiler/types/raw"
 )
 
 func TestYaml_Build_ToAPI(t *testing.T) {

@@ -9,9 +9,9 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/database/testutils"
-	"github.com/go-vela/server/database/types"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/database/testutils"
+	"github.com/Cargill/vela-server/database/types"
 )
 
 func TestWorker_Engine_ListWorkers(t *testing.T) {

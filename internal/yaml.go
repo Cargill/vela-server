@@ -8,7 +8,7 @@ import (
 
 	yaml "go.yaml.in/yaml/v3"
 
-	types "github.com/go-vela/server/compiler/types/yaml"
+	types "github.com/Cargill/vela-server/compiler/types/yaml"
 )
 
 // ParseYAML is a helper function for parsing base YAML pipelines and generating warnings for anchor usage.

@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"testing"
 
-	api "github.com/go-vela/server/api/types"
+	api "github.com/Cargill/vela-server/api/types"
 )
 
 func TestDashboard_ActiveDashboardResp(t *testing.T) {

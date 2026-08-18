@@ -9,12 +9,12 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/api/service"
-	"github.com/go-vela/server/api/step"
-	"github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/compiler/types/pipeline"
-	"github.com/go-vela/server/database"
-	"github.com/go-vela/server/scm"
+	"github.com/Cargill/vela-server/api/service"
+	"github.com/Cargill/vela-server/api/step"
+	"github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/compiler/types/pipeline"
+	"github.com/Cargill/vela-server/database"
+	"github.com/Cargill/vela-server/scm"
 )
 
 // PlanBuild is a helper function to plan the build for

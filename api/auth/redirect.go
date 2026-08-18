@@ -9,8 +9,8 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/internal"
-	"github.com/go-vela/server/util"
+	"github.com/Cargill/vela-server/internal"
+	"github.com/Cargill/vela-server/util"
 )
 
 // swagger:operation GET /authenticate/web authenticate GetAuthenticateTypeWeb

@@ -7,9 +7,9 @@ import (
 
 	"gorm.io/gorm"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/database/types"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/database/types"
 )
 
 // PruneAllowlist deletes any allowlist record from the database that belongs to the secret but is not in the active allowlist.

@@ -9,9 +9,9 @@ import (
 
 	"github.com/DATA-DOG/go-sqlmock"
 
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/database/testutils"
-	"github.com/go-vela/server/database/types"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/database/testutils"
+	"github.com/Cargill/vela-server/database/types"
 )
 
 func TestHook_Engine_CountHooksForRepo(t *testing.T) {

@@ -3,7 +3,7 @@
 package models
 
 import (
-	api "github.com/go-vela/server/api/types"
+	api "github.com/Cargill/vela-server/api/types"
 )
 
 // ItemVersion allows the worker to detect items that were queued before an Vela server

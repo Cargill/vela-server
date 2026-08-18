@@ -11,7 +11,7 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	api "github.com/go-vela/server/api/types"
+	api "github.com/Cargill/vela-server/api/types"
 )
 
 func TestTypes_Hook_Crop(t *testing.T) {

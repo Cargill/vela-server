@@ -8,7 +8,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/constants"
 )
 
 // New creates and returns a Vela service capable of
@@ -21,7 +21,7 @@ import (
 func New(ctx context.Context, s *Setup) (Service, error) {
 	// validate the setup being provided
 	//
-	// https://pkg.go.dev/github.com/go-vela/server/scm?tab=doc#Setup.Validate
+	// https://pkg.go.dev/github.com/Cargill/vela-server/scm?tab=doc#Setup.Validate
 	err := s.Validate()
 	if err != nil {
 		return nil, err
@@ -33,12 +33,12 @@ func New(ctx context.Context, s *Setup) (Service, error) {
 	case constants.DriverGithub:
 		// handle the Github scm driver being provided
 		//
-		// https://pkg.go.dev/github.com/go-vela/server/scm?tab=doc#Setup.Github
+		// https://pkg.go.dev/github.com/Cargill/vela-server/scm?tab=doc#Setup.Github
 		return s.Github(ctx)
 	case constants.DriverGitlab:
 		// handle the Gitlab scm driver being provided
 		//
-		// https://pkg.go.dev/github.com/go-vela/server/scm?tab=doc#Setup.Gitlab
+		// https://pkg.go.dev/github.com/Cargill/vela-server/scm?tab=doc#Setup.Gitlab
 		return s.Gitlab(ctx)
 	default:
 		// handle an invalid scm driver being provided

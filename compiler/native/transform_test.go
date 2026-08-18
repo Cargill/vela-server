@@ -7,9 +7,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/go-vela/server/compiler/types/pipeline"
-	"github.com/go-vela/server/compiler/types/yaml"
-	"github.com/go-vela/server/internal"
+	"github.com/Cargill/vela-server/compiler/types/pipeline"
+	"github.com/Cargill/vela-server/compiler/types/yaml"
+	"github.com/Cargill/vela-server/internal"
 )
 
 func TestNative_TransformStages(t *testing.T) {

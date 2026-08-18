@@ -8,7 +8,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/api/types"
+	"github.com/Cargill/vela-server/api/types"
 )
 
 // swagger:operation POST /api/v1/queue/info queue Info

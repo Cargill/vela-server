@@ -9,8 +9,8 @@ import (
 
 	"go.yaml.in/yaml/v3"
 
-	"github.com/go-vela/server/compiler/types/pipeline"
-	"github.com/go-vela/server/compiler/types/raw"
+	"github.com/Cargill/vela-server/compiler/types/pipeline"
+	"github.com/Cargill/vela-server/compiler/types/raw"
 )
 
 func TestYaml_ServiceSlice_ToPipeline(t *testing.T) {

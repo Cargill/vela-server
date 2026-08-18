@@ -10,7 +10,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	api "github.com/go-vela/server/api/types"
+	api "github.com/Cargill/vela-server/api/types"
 )
 
 func Test_PresignedPutObject_Success(t *testing.T) {

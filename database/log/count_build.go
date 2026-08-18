@@ -5,8 +5,8 @@ package log
 import (
 	"context"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/constants"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/constants"
 )
 
 // CountLogsForBuild gets the count of logs by build ID from the database.

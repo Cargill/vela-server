@@ -5,7 +5,7 @@ package middleware
 import (
 	"github.com/gin-gonic/gin"
 
-	"github.com/go-vela/server/internal"
+	"github.com/Cargill/vela-server/internal"
 )
 
 // Metadata is a middleware function that attaches the metadata

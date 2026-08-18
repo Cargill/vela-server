@@ -7,7 +7,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/go-vela/server/version"
+	"github.com/Cargill/vela-server/version"
 )
 
 // swagger:operation GET /version base Version

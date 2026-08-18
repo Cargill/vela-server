@@ -5,7 +5,7 @@ package cache
 import (
 	"context"
 
-	"github.com/go-vela/server/cache/models"
+	"github.com/Cargill/vela-server/cache/models"
 )
 
 // Service represents the interface for Vela integrating

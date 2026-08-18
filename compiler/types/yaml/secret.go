@@ -11,9 +11,9 @@ import (
 	"github.com/invopop/jsonschema"
 	orderedmap "github.com/pb33f/ordered-map/v2"
 
-	"github.com/go-vela/server/compiler/types/pipeline"
-	"github.com/go-vela/server/compiler/types/raw"
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/compiler/types/pipeline"
+	"github.com/Cargill/vela-server/compiler/types/raw"
+	"github.com/Cargill/vela-server/constants"
 )
 
 type (

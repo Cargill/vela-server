@@ -2,7 +2,7 @@
 
 package actions
 
-import "github.com/go-vela/server/constants"
+import "github.com/Cargill/vela-server/constants"
 
 // Pull is the API representation of the various actions associated
 // with the pull_request event webhook from the SCM.

@@ -10,8 +10,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/go-vela/server/storage"
-	"github.com/go-vela/server/storage/minio"
+	"github.com/Cargill/vela-server/storage"
+	"github.com/Cargill/vela-server/storage/minio"
 )
 
 func TestMiddleware_Storage(t *testing.T) {

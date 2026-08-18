@@ -10,7 +10,7 @@ import (
 	"github.com/hashicorp/vault/api"
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/constants"
 )
 
 // Count counts a list of secrets.

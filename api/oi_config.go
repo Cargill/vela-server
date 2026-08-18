@@ -10,8 +10,8 @@ import (
 	"github.com/golang-jwt/jwt/v5"
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/internal/token"
+	"github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/internal/token"
 )
 
 // swagger:operation GET /_services/token/.well-known/openid-configuration token GetOpenIDConfig

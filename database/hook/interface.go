@@ -5,7 +5,7 @@ package hook
 import (
 	"context"
 
-	api "github.com/go-vela/server/api/types"
+	api "github.com/Cargill/vela-server/api/types"
 )
 
 // HookInterface represents the Vela interface for hook

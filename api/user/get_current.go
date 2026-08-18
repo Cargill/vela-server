@@ -8,7 +8,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
 
-	"github.com/go-vela/server/router/middleware/user"
+	"github.com/Cargill/vela-server/router/middleware/user"
 )
 
 // swagger:operation GET /api/v1/user users GetCurrentUser

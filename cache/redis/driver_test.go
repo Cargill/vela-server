@@ -9,7 +9,7 @@ import (
 
 	"github.com/alicebob/miniredis/v2"
 
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/constants"
 )
 
 func TestRedis_Driver(t *testing.T) {

@@ -5,5 +5,5 @@
 //
 // Usage:
 //
-//	import "github.com/go-vela/server/queue"
+//	import "github.com/Cargill/vela-server/queue"
 package queue

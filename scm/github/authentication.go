@@ -12,8 +12,8 @@ import (
 
 	"github.com/google/go-github/v84/github"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/random"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/random"
 )
 
 // Authorize uses the given access token to authorize the user.

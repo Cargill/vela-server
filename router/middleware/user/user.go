@@ -10,12 +10,12 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/cache/models"
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/database"
-	"github.com/go-vela/server/router/middleware/claims"
-	"github.com/go-vela/server/util"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/cache/models"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/database"
+	"github.com/Cargill/vela-server/router/middleware/claims"
+	"github.com/Cargill/vela-server/util"
 )
 
 // Retrieve gets the user in the given context.

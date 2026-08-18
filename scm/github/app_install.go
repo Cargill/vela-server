@@ -11,11 +11,11 @@ import (
 
 	"gorm.io/gorm"
 
-	"github.com/go-vela/server/api/types"
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/database"
-	"github.com/go-vela/server/internal"
+	"github.com/Cargill/vela-server/api/types"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/database"
+	"github.com/Cargill/vela-server/internal"
 )
 
 // ProcessInstallation takes a GitHub installation and processes the changes.

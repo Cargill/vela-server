@@ -10,8 +10,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/go-vela/server/queue"
-	"github.com/go-vela/server/queue/redis"
+	"github.com/Cargill/vela-server/queue"
+	"github.com/Cargill/vela-server/queue/redis"
 )
 
 func TestMiddleware_Queue(t *testing.T) {

@@ -10,13 +10,13 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/afero"
 
-	"github.com/go-vela/server/compiler/registry"
-	"github.com/go-vela/server/compiler/template/native"
-	"github.com/go-vela/server/compiler/template/starlark"
-	"github.com/go-vela/server/compiler/types/pipeline"
-	"github.com/go-vela/server/compiler/types/raw"
-	"github.com/go-vela/server/compiler/types/yaml"
-	"github.com/go-vela/server/constants"
+	"github.com/Cargill/vela-server/compiler/registry"
+	"github.com/Cargill/vela-server/compiler/template/native"
+	"github.com/Cargill/vela-server/compiler/template/starlark"
+	"github.com/Cargill/vela-server/compiler/types/pipeline"
+	"github.com/Cargill/vela-server/compiler/types/raw"
+	"github.com/Cargill/vela-server/compiler/types/yaml"
+	"github.com/Cargill/vela-server/constants"
 )
 
 // ExpandStages injects the template for each

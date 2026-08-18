@@ -8,9 +8,9 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	api "github.com/go-vela/server/api/types"
-	"github.com/go-vela/server/constants"
-	"github.com/go-vela/server/internal"
+	api "github.com/Cargill/vela-server/api/types"
+	"github.com/Cargill/vela-server/constants"
+	"github.com/Cargill/vela-server/internal"
 )
 
 // Compose generates a refresh and access token pair unique

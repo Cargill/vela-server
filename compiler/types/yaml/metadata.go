@@ -5,7 +5,7 @@ package yaml
 import (
 	"slices"
 
-	"github.com/go-vela/server/compiler/types/pipeline"
+	"github.com/Cargill/vela-server/compiler/types/pipeline"
 )
 
 type (
