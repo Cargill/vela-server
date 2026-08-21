@@ -13,6 +13,9 @@ const (
 	// BuildLimitDefault defines the default value for repo concurrent build limit.
 	BuildLimitDefault = 10
 
+	// OrgBuildLimitDefault defines the default value for org concurrent build limit.
+	OrgBuildLimitDefault = 30
+
 	// BuildTimeoutMin defines the minimum value in minutes for repo build timeout.
 	BuildTimeoutMin = 1
 
