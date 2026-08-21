@@ -27,6 +27,7 @@ import (
 	"github.com/go-vela/server/database/hook"
 	dbJWK "github.com/go-vela/server/database/jwk"
 	"github.com/go-vela/server/database/log"
+	"github.com/go-vela/server/database/org"
 	"github.com/go-vela/server/database/pipeline"
 	"github.com/go-vela/server/database/repo"
 	"github.com/go-vela/server/database/schedule"
@@ -48,6 +49,7 @@ type Resources struct {
 	Executables []*api.BuildExecutable
 	Hooks       []*api.Hook
 	JWKs        jwk.Set
+	Orgs        []*api.Organization
 	Logs        []*api.Log
 	Pipelines   []*api.Pipeline
 	Repos       []*api.Repo
@@ -143,6 +145,8 @@ func TestDatabase_Integration(t *testing.T) {
 			t.Run("test_hooks", func(t *testing.T) { testHooks(t, db, resources) })
 
 			t.Run("test_jwks", func(t *testing.T) { testJWKs(t, db, resources) })
+
+			t.Run("test_orgs", func(t *testing.T) { testOrgs(t, db, resources) })
 
 			t.Run("test_logs", func(t *testing.T) { testLogs(t, db, resources) })
 
@@ -2760,6 +2764,84 @@ func testWorkers(t *testing.T, db Interface, resources *Resources) {
 	}
 }
 
+func testOrgs(t *testing.T, db Interface, resources *Resources) {
+	// create a variable to track the number of methods called for orgs
+	methods := make(map[string]bool)
+	// capture the element type of the org interface
+	element := reflect.TypeFor[org.OrgInterface]()
+	// iterate through all methods found in the org interface
+	for method := range element.Methods() {
+		// skip tracking the methods to create indexes and tables for orgs
+		// since those are already called when the database engine starts
+		if strings.Contains(method.Name, "Index") ||
+			strings.Contains(method.Name, "Table") {
+			continue
+		}
+
+		// add the method name to the list of functions
+		methods[method.Name] = false
+	}
+
+	ctx := context.TODO()
+
+	// create the orgs
+	for _, o := range resources.Orgs {
+		_, err := db.CreateOrg(ctx, o)
+		if err != nil {
+			t.Errorf("unable to create org for %s: %v", o.GetName(), err)
+		}
+	}
+
+	methods["CreateOrg"] = true
+
+	// lookup the orgs by name
+	for _, o := range resources.Orgs {
+		got, err := db.GetOrg(ctx, o.GetName())
+		if err != nil {
+			t.Errorf("unable to get org for %s: %v", o.GetName(), err)
+		}
+
+		if got.GetBuildLimit() != o.GetBuildLimit() {
+			t.Errorf("GetOrg() build limit is %v, want %v", got.GetBuildLimit(), o.GetBuildLimit())
+		}
+	}
+
+	methods["GetOrg"] = true
+
+	// update the orgs
+	for _, o := range resources.Orgs {
+		o.SetBuildLimit(50)
+
+		got, err := db.UpdateOrg(ctx, o)
+		if err != nil {
+			t.Errorf("unable to update org for %s: %v", o.GetName(), err)
+		}
+
+		if got.GetBuildLimit() != int32(50) {
+			t.Errorf("UpdateOrg() build limit is %v, want %v", got.GetBuildLimit(), 50)
+		}
+	}
+
+	methods["UpdateOrg"] = true
+
+	// delete the orgs
+	for _, o := range resources.Orgs {
+		err := db.DeleteOrg(ctx, o.GetName())
+		if err != nil {
+			t.Errorf("unable to delete org for %s: %v", o.GetName(), err)
+		}
+	}
+
+	methods["DeleteOrg"] = true
+
+	// ensure we called all the methods we expected to
+	for method, called := range methods {
+		if !called {
+			t.Errorf("method %s was not called for orgs", method)
+		}
+	}
+}
+
 func testSettings(t *testing.T, db Interface, resources *Resources) {
 	// create a variable to track the number of methods called for settings
 	methods := make(map[string]bool)
@@ -3103,6 +3185,22 @@ func newResources() *Resources {
 
 	_ = jwkSet.AddKey(jwkTwo)
 
+	orgOne := new(api.Organization)
+	orgOne.SetID(1)
+	orgOne.SetName("github")
+	orgOne.SetBuildLimit(30)
+	orgOne.SetCreatedAt(time.Now().UTC().Unix())
+	orgOne.SetUpdatedAt(time.Now().UTC().Unix())
+	orgOne.SetUpdatedBy("octocat")
+
+	orgTwo := new(api.Organization)
+	orgTwo.SetID(2)
+	orgTwo.SetName("octocat")
+	orgTwo.SetBuildLimit(60)
+	orgTwo.SetCreatedAt(time.Now().UTC().Unix())
+	orgTwo.SetUpdatedAt(time.Now().UTC().Unix())
+	orgTwo.SetUpdatedBy("octocat")
+
 	logServiceOne := new(api.Log)
 	logServiceOne.SetID(1)
 	logServiceOne.SetBuildID(1)
@@ -3380,6 +3478,7 @@ func newResources() *Resources {
 		Executables: []*api.BuildExecutable{executableOne, executableTwo},
 		Hooks:       []*api.Hook{hookOne, hookTwo, hookThree},
 		JWKs:        jwkSet,
+		Orgs:        []*api.Organization{orgOne, orgTwo},
 		Logs:        []*api.Log{logServiceOne, logServiceTwo, logStepOne, logStepTwo},
 		Pipelines:   []*api.Pipeline{pipelineOne, pipelineTwo},
 		Repos:       []*api.Repo{repoOne, repoTwo},
