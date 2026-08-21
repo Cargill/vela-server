@@ -25,6 +25,9 @@ const (
 	// TableLog defines the table type for the database logs table.
 	TableLog = "logs"
 
+	// TableOrganization defines the table type for the database orgs table.
+	TableOrganization = "orgs"
+
 	// TablePipeline defines the table type for the database pipelines table.
 	TablePipeline = "pipelines"
 
