@@ -69,6 +69,12 @@ func server(ctx context.Context, cmd *cli.Command) error {
 		logrus.SetLevel(logrus.PanicLevel)
 	}
 
+	// a default org build limit of zero disables org build limits entirely
+	defaultOrgBuildLimit := cmd.Int32("default-org-build-limit")
+	if !cmd.Bool("vela-enable-org-build-limit") {
+		defaultOrgBuildLimit = 0
+	}
+
 	compiler, err := native.FromCLICommand(ctx, cmd)
 	if err != nil {
 		return err
@@ -207,6 +213,7 @@ func server(ctx context.Context, cmd *cli.Command) error {
 		middleware.QueueSigningPublicKey(cmd.String("queue.public-key")),
 		middleware.QueueAddress(cmd.String("queue.addr")),
 		middleware.DefaultBuildLimit(cmd.Int32("default-build-limit")),
+		middleware.DefaultOrgBuildLimit(defaultOrgBuildLimit),
 		middleware.DefaultTimeout(cmd.Int32("default-build-timeout")),
 		middleware.DefaultApprovalTimeout(cmd.Int32("default-approval-timeout")),
 		middleware.MaxBuildLimit(cmd.Int32("max-build-limit")),
