@@ -12,6 +12,7 @@ import (
 	"github.com/go-vela/server/database/hook"
 	"github.com/go-vela/server/database/jwk"
 	"github.com/go-vela/server/database/log"
+	"github.com/go-vela/server/database/org"
 	"github.com/go-vela/server/database/pipeline"
 	"github.com/go-vela/server/database/repo"
 	"github.com/go-vela/server/database/schedule"
@@ -105,6 +106,16 @@ func (e *engine) NewResources(ctx context.Context) error {
 		jwk.WithClient(e.client),
 		jwk.WithLogger(e.logger),
 		jwk.WithSkipCreation(e.config.SkipCreation),
+	)
+	if err != nil {
+		return err
+	}
+
+	e.OrgInterface, err = org.New(
+		org.WithContext(ctx),
+		org.WithClient(e.client),
+		org.WithLogger(e.logger),
+		org.WithSkipCreation(e.config.SkipCreation),
 	)
 	if err != nil {
 		return err
