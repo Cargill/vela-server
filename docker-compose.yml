@@ -43,6 +43,7 @@ services:
       VELA_WORKER_AUTH_TOKEN_DURATION: 3m
       VELA_DISABLE_WEBHOOK_VALIDATION: 'true'
       VELA_ENABLE_SECURE_COOKIE: 'false'
+      VELA_ENABLE_ORG_BUILD_LIMIT: 'true'
       VELA_REPO_ALLOWLIST: '*'
       VELA_SCHEDULE_ALLOWLIST: '*'
       VELA_OTEL_TRACING_ENABLE: true
@@ -143,7 +144,7 @@ services:
   # https://www.postgresql.org/
   postgres:
     container_name: postgres
-    image: postgres:15-alpine
+    image: postgres:16-alpine
     networks:
       - vela
     environment:
