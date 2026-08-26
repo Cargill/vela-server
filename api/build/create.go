@@ -113,11 +113,12 @@ func CreateBuild(c *gin.Context) {
 
 	// create config
 	config := CompileAndPublishConfig{
-		Build:    input,
-		Metadata: m,
-		BaseErr:  "unable to create build",
-		Source:   "create",
-		Retries:  1,
+		Build:                input,
+		Metadata:             m,
+		BaseErr:              "unable to create build",
+		Source:               "create",
+		Retries:              1,
+		DefaultOrgBuildLimit: c.GetInt32("defaultOrgBuildLimit"),
 	}
 
 	_, item, code, err := CompileAndPublish(
