@@ -58,6 +58,7 @@ func TestTypes_Platform_ToAPI(t *testing.T) {
 	want.SetEnableRepoSecrets(true)
 	want.SetEnableOrgSecrets(true)
 	want.SetEnableSharedSecrets(true)
+	want.SetEnableOrgBuildLimit(true)
 	want.SetCreatedAt(0)
 	want.SetUpdatedAt(0)
 	want.SetUpdatedBy("")
@@ -208,6 +209,7 @@ func TestTypes_Platform_PlatformFromAPI(t *testing.T) {
 	s.SetEnableRepoSecrets(true)
 	s.SetEnableOrgSecrets(true)
 	s.SetEnableSharedSecrets(true)
+	s.SetEnableOrgBuildLimit(true)
 	s.SetCreatedAt(0)
 	s.SetUpdatedAt(0)
 	s.SetUpdatedBy("")
@@ -288,6 +290,7 @@ func testPlatform() *Platform {
 		EnableRepoSecrets:   sql.NullBool{Bool: true, Valid: true},
 		EnableOrgSecrets:    sql.NullBool{Bool: true, Valid: true},
 		EnableSharedSecrets: sql.NullBool{Bool: true, Valid: true},
+		EnableOrgBuildLimit: sql.NullBool{Bool: true, Valid: true},
 		CreatedAt:           sql.NullInt64{Int64: 0, Valid: true},
 		UpdatedAt:           sql.NullInt64{Int64: 0, Valid: true},
 		UpdatedBy:           sql.NullString{String: "", Valid: true},

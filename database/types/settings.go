@@ -29,13 +29,14 @@ type (
 		Queue    `json:"queue"    sql:"queue"`
 		SCM      `json:"scm"      sql:"scm"`
 
-		RepoAllowlist       pq.StringArray `json:"repo_allowlist"        sql:"repo_allowlist"        gorm:"type:varchar(1000)"`
-		ScheduleAllowlist   pq.StringArray `json:"schedule_allowlist"    sql:"schedule_allowlist"    gorm:"type:varchar(1000)"`
-		MaxDashboardRepos   sql.NullInt32  `json:"max_dashboard_repos"   sql:"max_dashboard_repos"`
-		QueueRestartLimit   sql.NullInt32  `json:"queue_restart_limit"   sql:"queue_restart_limit"`
-		EnableRepoSecrets   sql.NullBool   `json:"enable_repo_secrets"   sql:"enable_repo_secrets"`
-		EnableOrgSecrets    sql.NullBool   `json:"enable_org_secrets"    sql:"enable_org_secrets"`
-		EnableSharedSecrets sql.NullBool   `json:"enable_shared_secrets" sql:"enable_shared_secrets"`
+		RepoAllowlist       pq.StringArray `json:"repo_allowlist"         sql:"repo_allowlist"         gorm:"type:varchar(1000)"`
+		ScheduleAllowlist   pq.StringArray `json:"schedule_allowlist"     sql:"schedule_allowlist"     gorm:"type:varchar(1000)"`
+		MaxDashboardRepos   sql.NullInt32  `json:"max_dashboard_repos"    sql:"max_dashboard_repos"`
+		QueueRestartLimit   sql.NullInt32  `json:"queue_restart_limit"    sql:"queue_restart_limit"`
+		EnableRepoSecrets   sql.NullBool   `json:"enable_repo_secrets"    sql:"enable_repo_secrets"`
+		EnableOrgSecrets    sql.NullBool   `json:"enable_org_secrets"     sql:"enable_org_secrets"`
+		EnableSharedSecrets sql.NullBool   `json:"enable_shared_secrets"  sql:"enable_shared_secrets"`
+		EnableOrgBuildLimit sql.NullBool   `json:"enable_org_build_limit" sql:"enable_org_build_limit"`
 
 		CreatedAt sql.NullInt64  `sql:"created_at"`
 		UpdatedAt sql.NullInt64  `sql:"updated_at"`
@@ -195,6 +196,7 @@ func (ps *Platform) ToAPI() *settings.Platform {
 	psAPI.SetEnableRepoSecrets(ps.EnableRepoSecrets.Bool)
 	psAPI.SetEnableOrgSecrets(ps.EnableOrgSecrets.Bool)
 	psAPI.SetEnableSharedSecrets(ps.EnableSharedSecrets.Bool)
+	psAPI.SetEnableOrgBuildLimit(ps.EnableOrgBuildLimit.Bool)
 
 	psAPI.Compiler = new(settings.Compiler)
 	psAPI.SetCloneImage(ps.CloneImage.String)
@@ -304,6 +306,7 @@ func SettingsFromAPI(s *settings.Platform) *Platform {
 		EnableRepoSecrets:   sql.NullBool{Bool: s.GetEnableRepoSecrets(), Valid: true},
 		EnableOrgSecrets:    sql.NullBool{Bool: s.GetEnableOrgSecrets(), Valid: true},
 		EnableSharedSecrets: sql.NullBool{Bool: s.GetEnableSharedSecrets(), Valid: true},
+		EnableOrgBuildLimit: sql.NullBool{Bool: s.GetEnableOrgBuildLimit(), Valid: true},
 		CreatedAt:           sql.NullInt64{Int64: s.GetCreatedAt(), Valid: true},
 		UpdatedAt:           sql.NullInt64{Int64: s.GetUpdatedAt(), Valid: true},
 		UpdatedBy:           sql.NullString{String: s.GetUpdatedBy(), Valid: true},
