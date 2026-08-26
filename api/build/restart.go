@@ -158,11 +158,12 @@ func RestartBuild(c *gin.Context) {
 
 	// restart form
 	config := CompileAndPublishConfig{
-		Build:    b,
-		Metadata: m,
-		BaseErr:  "unable to restart build",
-		Source:   "restart",
-		Retries:  1,
+		Build:                b,
+		Metadata:             m,
+		BaseErr:              "unable to restart build",
+		Source:               "restart",
+		Retries:              1,
+		DefaultOrgBuildLimit: c.GetInt32("defaultOrgBuildLimit"),
 	}
 
 	// generate queue items
