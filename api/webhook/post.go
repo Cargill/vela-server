@@ -449,15 +449,16 @@ func PostWebhook(c *gin.Context) {
 
 	// construct CompileAndPublishConfig
 	config := build.CompileAndPublishConfig{
-		Build:      b,
-		Deployment: webhook.Deployment,
-		Metadata:   m,
-		BaseErr:    baseErr,
-		Source:     "webhook",
-		Comment:    prComment,
-		Labels:     prLabels,
-		Files:      webhook.Files,
-		Retries:    3,
+		Build:                b,
+		Deployment:           webhook.Deployment,
+		Metadata:             m,
+		BaseErr:              baseErr,
+		Source:               "webhook",
+		Comment:              prComment,
+		Labels:               prLabels,
+		Files:                webhook.Files,
+		Retries:              3,
+		DefaultOrgBuildLimit: c.GetInt32("defaultOrgBuildLimit"),
 	}
 
 	// generate the queue item
