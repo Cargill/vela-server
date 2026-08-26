@@ -12,6 +12,7 @@ import (
 	"time"
 
 	"github.com/sirupsen/logrus"
+	"gorm.io/gorm"
 
 	"github.com/go-vela/server/api/types"
 	"github.com/go-vela/server/cache"
@@ -27,15 +28,16 @@ import (
 
 // CompileAndPublishConfig is a struct that contains information for the CompileAndPublish function.
 type CompileAndPublishConfig struct {
-	Build      *types.Build
-	Deployment *types.Deployment
-	Metadata   *internal.Metadata
-	BaseErr    string
-	Source     string
-	Comment    string
-	Labels     []string
-	Files      []string
-	Retries    int
+	Build                *types.Build
+	Deployment           *types.Deployment
+	Metadata             *internal.Metadata
+	BaseErr              string
+	Source               string
+	Comment              string
+	Labels               []string
+	Files                []string
+	Retries              int
+	DefaultOrgBuildLimit int32
 }
 
 // CompileAndPublish is a helper function to generate the queue items for a build. It takes a form
@@ -148,7 +150,6 @@ func CompileAndPublish(
 		"status": []string{constants.StatusPending, constants.StatusRunning},
 	}
 
-	// send API call to capture the number of pending or running builds for the repo
 	builds, err := database.CountBuildsForRepo(ctx, r, filters, time.Now().Unix(), 0)
 	if err != nil {
 		retErr := fmt.Errorf("%s: unable to get count of builds for repo %s", baseErr, r.GetFullName())
@@ -163,6 +164,46 @@ func CompileAndPublish(
 		retErr := fmt.Errorf("%s: repo %s has exceeded the concurrent build limit of %d", baseErr, r.GetFullName(), r.GetBuildLimit())
 
 		return nil, nil, http.StatusTooManyRequests, retErr
+	}
+
+	// pull platform settings to check if org build limit is enabled
+	settings, err := database.GetSettings(ctx)
+	if err != nil {
+		retErr := fmt.Errorf("%s: unable to get platform settings to check if organization build limit is enabled %s: %w", baseErr, r.GetFullName(), err)
+
+		return nil, nil, http.StatusInternalServerError, retErr
+	}
+
+	if settings.GetEnableOrgBuildLimit() {
+		buildsByOrg, err := database.CountBuildsForOrg(ctx, r.GetOrg(), filters)
+		if err != nil {
+			retErr := fmt.Errorf("%s: unable to get count of builds for repo's organization %s", baseErr, r.GetFullName())
+
+			return nil, nil, http.StatusInternalServerError, retErr
+		}
+
+		logger.Debugf("currently %d builds running in organization %s", buildsByOrg, r.GetOrg())
+
+		// check if the number of pending and running builds exceeds the limit for the repo's organization
+		limit, err := database.GetOrgBuildLimit(ctx, r.GetOrg())
+		if err != nil {
+			if errors.Is(err, gorm.ErrRecordNotFound) {
+				if cfg.DefaultOrgBuildLimit != 0 && buildsByOrg >= int64(cfg.DefaultOrgBuildLimit) {
+					retErr := fmt.Errorf("%s: repo %s has exceeded the concurrent default organization build limit of %d", baseErr, r.GetFullName(), cfg.DefaultOrgBuildLimit)
+
+					return nil, nil, http.StatusTooManyRequests, retErr
+				}
+			} else {
+				retErr := fmt.Errorf("%s: unable to get organization build limit for repo %s in organization %s: %w", baseErr, r.GetFullName(), r.GetOrg(), err)
+
+				return nil, nil, http.StatusInternalServerError, retErr
+			}
+		} else if buildsByOrg >= int64(limit.GetBuildLimit()) {
+			// this branch only runs if there exists an org build limit in the org limits table, otherwise use the fallback
+			retErr := fmt.Errorf("%s: repo %s has exceeded the concurrent build limit of %d", baseErr, r.GetFullName(), limit.GetBuildLimit())
+
+			return nil, nil, http.StatusTooManyRequests, retErr
+		}
 	}
 
 	// update fields in build object

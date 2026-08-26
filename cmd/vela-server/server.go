@@ -364,7 +364,7 @@ func server(ctx context.Context, cmd *cli.Command) error {
 			queue.SetSettings(ps)
 
 			// pass in parent non-cancelable and timeout-less context
-			err = processSchedules(ctx, start, ps, compiler, database, cache, metadata, queue, scm)
+			err = processSchedules(ctx, start, ps, compiler, database, cache, metadata, queue, scm, cmd.Int32("default-org-build-limit"))
 			if err != nil {
 				logrus.WithError(err).Warn("unable to process schedules")
 			} else {

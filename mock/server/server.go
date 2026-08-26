@@ -89,6 +89,11 @@ func FakeHandler() http.Handler {
 	e.GET("/api/v1/pipelines/:org/:repo/:pipeline/templates", getTemplates)
 	e.POST("/api/v1/pipelines/:org/:repo/:pipeline/validate", validatePipeline)
 
+	// mock endpoints for org build limit calls
+	e.GET("/api/v1/repos/:org/limit", getOrgBuildLimit)
+	e.PUT("/api/v1/repos/:org/limit", updateOrgBuildLimit)
+	e.DELETE("/api/v1/repos/:org/limit", deleteOrgBuildLimit)
+
 	// mock endpoints for repo calls
 	e.GET("/api/v1/repos/:org/:repo", getRepo)
 	e.GET("/api/v1/repos", getRepos)
