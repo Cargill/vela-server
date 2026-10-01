@@ -119,6 +119,19 @@ test:
 	@echo "### Testing Go Code"
 	@go test -race -covermode=atomic -coverprofile=coverage.out ./...
 
+# The `test-local` target runs the same tests as `test`
+# but skips compression tests that produce platform-dependent
+# output (hardcoded expected bytes were generated on amd64 Linux).
+#
+# Usage: `make test-local`
+.PHONY: test-local
+test-local:
+	@echo
+	@echo "### Testing Go Code (skipping platform-sensitive compression tests)"
+	@go test -race -covermode=atomic -coverprofile=coverage.out \
+		-skip 'TestDatabase_(Pipeline|Log|BuildExecutable)_Compress$$|TestDatabase_compress$$' \
+		./...
+
 # The `test-cover` target is intended to run
 # the tests for the Go source code and then
 # open the test coverage report.
