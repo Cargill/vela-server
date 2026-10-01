@@ -50,6 +50,7 @@ const (
 			"enable_repo_secrets": true,
 			"enable_org_secrets": true,
 			"enable_shared_secrets": true,
+			"enable_org_build_limit": false,
 			"created_at": 1,
 			"updated_at": 1,
 			"updated_by": "octocat"
@@ -93,6 +94,7 @@ const (
 			"enable_repo_secrets": true,
 			"enable_org_secrets": true,
 			"enable_shared_secrets": false,
+			"enable_org_build_limit": false,
 			"created_at": 1,
 			"updated_at": 1,
 			"updated_by": "octocat"
@@ -136,6 +138,7 @@ const (
 		"enable_repo_secrets": true,
 		"enable_org_secrets": true,
 		"enable_shared_secrets": true,
+		"enable_org_build_limit": false,
 		"created_at": 1,
 		"updated_at": 1,
 		"updated_by": "octocat"
