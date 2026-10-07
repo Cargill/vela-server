@@ -64,7 +64,12 @@ func GetSettings(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusOK, s)
+	// copy the shared middleware value before adding the read-only org build limit toggle,
+	// which is enabled when the default org build limit is positive
+	ps := *s
+	ps.SetEnableOrgBuildLimit(c.GetInt32("defaultOrgBuildLimit") > 0)
+
+	c.JSON(http.StatusOK, &ps)
 }
 
 // swagger:operation PUT /api/v1/admin/settings admin UpdateSettings
