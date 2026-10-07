@@ -10,6 +10,7 @@ import (
 	"github.com/go-vela/server/database/hook"
 	"github.com/go-vela/server/database/jwk"
 	"github.com/go-vela/server/database/log"
+	"github.com/go-vela/server/database/org"
 	"github.com/go-vela/server/database/pipeline"
 	"github.com/go-vela/server/database/repo"
 	"github.com/go-vela/server/database/schedule"
@@ -59,6 +60,9 @@ type Interface interface {
 
 	// JWKInterface defines the interface for JWKs stored in the database.
 	jwk.JWKInterface
+
+	// OrgInterface defines the interface for organizations stored in the database.
+	org.OrgInterface
 
 	// LogInterface defines the interface for logs stored in the database.
 	log.LogInterface
