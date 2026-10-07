@@ -27,15 +27,16 @@ import (
 
 // CompileAndPublishConfig is a struct that contains information for the CompileAndPublish function.
 type CompileAndPublishConfig struct {
-	Build      *types.Build
-	Deployment *types.Deployment
-	Metadata   *internal.Metadata
-	BaseErr    string
-	Source     string
-	Comment    string
-	Labels     []string
-	Files      []string
-	Retries    int
+	Build                *types.Build
+	Deployment           *types.Deployment
+	Metadata             *internal.Metadata
+	BaseErr              string
+	Source               string
+	Comment              string
+	Labels               []string
+	Files                []string
+	Retries              int
+	DefaultOrgBuildLimit int32
 }
 
 // CompileAndPublish is a helper function to generate the queue items for a build. It takes a form
@@ -148,7 +149,6 @@ func CompileAndPublish(
 		"status": []string{constants.StatusPending, constants.StatusRunning},
 	}
 
-	// send API call to capture the number of pending or running builds for the repo
 	builds, err := database.CountBuildsForRepo(ctx, r, filters, time.Now().Unix(), 0)
 	if err != nil {
 		retErr := fmt.Errorf("%s: unable to get count of builds for repo %s", baseErr, r.GetFullName())
@@ -163,6 +163,34 @@ func CompileAndPublish(
 		retErr := fmt.Errorf("%s: repo %s has exceeded the concurrent build limit of %d", baseErr, r.GetFullName(), r.GetBuildLimit())
 
 		return nil, nil, http.StatusTooManyRequests, retErr
+	}
+
+	// a default org build limit of zero means org build limits are disabled
+	if cfg.DefaultOrgBuildLimit > 0 {
+		buildsByOrg, err := database.CountBuildsForOrg(ctx, r.GetOrg(), filters)
+		if err != nil {
+			retErr := fmt.Errorf("%s: unable to get count of builds for repo's organization %s", baseErr, r.GetFullName())
+
+			return nil, nil, http.StatusInternalServerError, retErr
+		}
+
+		logger.Debugf("currently %d builds running in organization %s", buildsByOrg, r.GetOrg())
+
+		// check if the number of pending and running builds exceeds the limit for the repo's organization
+		limit, err := database.GetOrg(ctx, r.GetOrg())
+		if err != nil || limit.GetBuildLimit() <= 0 {
+			// no organization record (or a limit of zero) or DB client error means the default limit applies
+			if buildsByOrg >= int64(cfg.DefaultOrgBuildLimit) {
+				retErr := fmt.Errorf("%s: repo %s has exceeded the default organization concurrent build limit of %d", baseErr, r.GetFullName(), cfg.DefaultOrgBuildLimit)
+
+				return nil, nil, http.StatusTooManyRequests, retErr
+			}
+		} else if buildsByOrg >= int64(limit.GetBuildLimit()) {
+			// this branch only runs if there exists an organization record with a positive limit
+			retErr := fmt.Errorf("%s: repo %s has exceeded the organization's concurrent build limit of %d", baseErr, r.GetFullName(), limit.GetBuildLimit())
+
+			return nil, nil, http.StatusTooManyRequests, retErr
+		}
 	}
 
 	// update fields in build object

@@ -31,7 +31,7 @@ const (
 	scheduleWait = "waiting to trigger build for schedule"
 )
 
-func processSchedules(ctx context.Context, start time.Time, settings *settings.Platform, compiler compiler.Engine, database database.Interface, cache cache.Service, metadata *internal.Metadata, queue queue.Service, scm scm.Service) error {
+func processSchedules(ctx context.Context, start time.Time, settings *settings.Platform, compiler compiler.Engine, database database.Interface, cache cache.Service, metadata *internal.Metadata, queue queue.Service, scm scm.Service, defaultOrgBuildLimit int32) error {
 	logrus.Infof("processing active schedules to create builds")
 
 	// send API call to capture the list of active schedules
@@ -129,7 +129,7 @@ func processSchedules(ctx context.Context, start time.Time, settings *settings.P
 		}).Info("schedule updated - scheduled at set")
 
 		// process the schedule and trigger a new build
-		err = processSchedule(ctx, schedule, settings, compiler, database, cache, metadata, queue, scm)
+		err = processSchedule(ctx, schedule, settings, compiler, database, cache, metadata, queue, scm, defaultOrgBuildLimit)
 		if err != nil {
 			handleError(ctx, database, err, schedule)
 
@@ -159,7 +159,7 @@ func processSchedules(ctx context.Context, start time.Time, settings *settings.P
 }
 
 // processSchedule will, given a schedule, process it and trigger a new build.
-func processSchedule(ctx context.Context, s *api.Schedule, settings *settings.Platform, compiler compiler.Engine, database database.Interface, cache cache.Service, metadata *internal.Metadata, queue queue.Service, scm scm.Service) error {
+func processSchedule(ctx context.Context, s *api.Schedule, settings *settings.Platform, compiler compiler.Engine, database database.Interface, cache cache.Service, metadata *internal.Metadata, queue queue.Service, scm scm.Service, defaultOrgBuildLimit int32) error {
 	// send API call to capture the repo for the schedule
 	r, err := database.GetRepo(ctx, s.GetRepo().GetID())
 	if err != nil {
@@ -205,11 +205,12 @@ func processSchedule(ctx context.Context, s *api.Schedule, settings *settings.Pl
 
 	// schedule form
 	config := build.CompileAndPublishConfig{
-		Build:    b,
-		Metadata: metadata,
-		BaseErr:  "unable to schedule build",
-		Source:   "schedule",
-		Retries:  1,
+		Build:                b,
+		Metadata:             metadata,
+		BaseErr:              "unable to schedule build",
+		Source:               "schedule",
+		Retries:              1,
+		DefaultOrgBuildLimit: defaultOrgBuildLimit,
 	}
 
 	_, item, _, err := build.CompileAndPublish(

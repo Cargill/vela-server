@@ -124,6 +124,9 @@ func Load(options ...gin.HandlerFunc) *gin.Engine {
 		// Hook endpoints
 		HookHandlers(baseAPI)
 
+		// Org endpoints
+		OrgHandlers(baseAPI)
+
 		// Repo endpoints
 		// * Build endpoints
 		//   * Service endpoints
